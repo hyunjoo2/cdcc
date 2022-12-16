@@ -719,7 +719,8 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     transform: translate3d(100%, 0, 0);
   }
   html:not(.no-js) [data-aos^=flip][data-aos^=flip] {
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
     transition-property: transform;
   }
   html:not(.no-js) [data-aos=flip-left] {

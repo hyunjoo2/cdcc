@@ -700,16 +700,12 @@ label {
   z-index: 2;
 }
 .mousescroll__inner img {
-  animation: Mouse_act 1s ease-out infinite;
+  -webkit-animation: Mouse_act 1s ease-out infinite;
+          animation: Mouse_act 1s ease-out infinite;
 }
 .mousescroll__inner .mouseswrap {
   display: flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   position: relative;
   width: 1.8rem;
@@ -735,7 +731,8 @@ label {
 .mousescroll__inner .mouseswrap .arrow {
   position: absolute;
   bottom: 0;
-  animation: Mouse_act 1s ease-out infinite;
+  -webkit-animation: Mouse_act 1s ease-out infinite;
+          animation: Mouse_act 1s ease-out infinite;
 }
 .mousescroll__inner .mouseswrap .arrow span {
   position: absolute;
@@ -1231,12 +1228,32 @@ label {
   background: url(../image/common/icon/icon_more--color-white.png);
 }
 
+@-webkit-keyframes scroll-inner {
+  from {
+    margin-top: 15%;
+  }
+  to {
+    margin-top: 50%;
+  }
+}
+
 @keyframes scroll-inner {
   from {
     margin-top: 15%;
   }
   to {
     margin-top: 50%;
+  }
+}
+@-webkit-keyframes Mouse_act {
+  0% {
+    transform: translateY(2px);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(2px);
   }
 }
 @keyframes Mouse_act {
@@ -1370,14 +1387,8 @@ label {
     padding: 0 3rem;
   }
   .quickmenu__inner div > a {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     padding-top: 0rem;
     padding-left: 1rem;
