@@ -908,6 +908,9 @@ label {
   margin-top: 3rem;
 }
 .psycho-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   border-bottom: 1px solid #d6dbea;
   padding-bottom: 5rem;
   margin-top: 4rem;
