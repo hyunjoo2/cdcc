@@ -822,6 +822,12 @@ label {
   background-color: #f6f8fa;
   color: #333333;
 }
+.map-area .root_daum_roughmap {
+  width: 100% !important;
+}
+.map-area .root_daum_roughmap .wrap_controllers {
+  display: none;
+}
 
 .counter-wrap {
   display: flex;
@@ -829,10 +835,10 @@ label {
 .counter-box {
   display: flex;
   align-items: center;
-  padding: 2rem 1.8rem 2.5rem 1.8rem;
+  padding: 0 1.8rem 2.5rem 1.8rem;
 }
 .counter-box:first-child {
-  padding: 2rem 1.8rem 2.5rem 0;
+  padding: 0 1.8rem 2.5rem 0;
 }
 .counter-num {
   display: flex;

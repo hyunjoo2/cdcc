@@ -352,8 +352,11 @@
 
                   <div class="map">
                     <div class="map__inner">
-                      <div class="map-img">
-                        <img src="../resource/image/sub/img-map.jpg" alt="" />
+                      <div class="map-area">
+                        
+                        <div id="daumRoughmapContainer1671178214531" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+                        
                       </div>
                       <div class="map-desc">
                         (08826) 서울특별시 관악구 관악로1, 서울대학교 인문관 4동
@@ -530,5 +533,14 @@
       </footer>
     </div>
   </body>
-  <script></script>
+  <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+  <script>
+    new daum.roughmap.Lander({
+                            "timestamp" : "1671178214531",
+                            "key" : "2d38j",
+                            "mapWidth" : "100%",
+                            "mapHeight" : "360"
+                          }).render();
+  </script>
 </html>
