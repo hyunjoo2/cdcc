@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>서울대 학생생활문화원</title>
+
+    <!--<link rel="shortcut icon" href="../resource/image/common/favicon.png" type="image/x-icon" />-->
+
+    <link rel="stylesheet" href="../resource/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../resource/css/jquery.fullpage.css" />
+    <link rel="stylesheet" href="../resource/css/swiper.min.css" />
+    <link rel="stylesheet" href="../resource/css/reset.css" />
+    <link rel="stylesheet" href="../resource/css/font.css" />
+
+    <link rel="stylesheet" href="../resource/css/common.css" />
+    <link rel="stylesheet" href="../resource/css/main.css" />
+    <link rel="stylesheet" href="../resource/css/sub.css" />
+
+    <script src="../resource/js/jquery-1.12.4.min.js"></script>
+
+    <script src="../resource/js/jquery.fullpage.min.js"></script>
+    <script src="../resource/js/swiper.min.js"></script>
+    <script src="../resource/js/bootstrap.bundle.min.js"></script>
+    <script src="../resource/js/TweenMax.min.js"></script>
+
+    <script src="../resource/js/common.js"></script>
+    <script src="../resource/js/sub.js"></script>
+
+    <script></script>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div class="skipNavigation">
+        <a href="#contents" class="skip_navi sn_sub">본문 바로 가기</a>
+        <a href="#gnb" class="skip_navi sn_ct">대메뉴 바로 가기</a>
+      </div>
+
+      <header class="header">
+        <div class="gnb_wrap d-flex align-items-center">
+          <div class="inner d-flex justify-content-between align-items-center">
+            <div class="header-logo">
+              <a href="./index.html"></a>
+            </div>
+            <div class="gnb">
+              <ul class="gnb-menu">
+                <li class="gnb-item">
+                  <a href="javascript:void(0)" class="gnb-link">생생원 소개</a>
+                  <div class="depth2">
+                    <ul class="depth2-list">
+                      <li class="depth2-item">
+                        <a href="javascript:void(0)" class="depth2-link"
+                          >인사말</a
+                        >
+                      </li>
+                      <li class="depth2-item">
+                        <a href="javascript:void(0)" class="depth2-link"
+                          >조직도</a
+                        >
+                      </li>
+                      <li class="depth2-item">
+                        <a href="javascript:void(0)" class="depth2-link"
+                          >오시는 길</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="gnb-item">
+                  <a href="javascript:void(0)" class="gnb-link"
+                    >심리상담센터 프로그램</a
+                  >
+                  <div class="depth2">
+                    <ul class="depth2-list">
+                      <li class="depth2-item">
+                        <a href="javascript:void(0)" class="depth2-link"
+                          >개인심리 상담</a
+                        >
+                      </li>
+                      <li class="depth2-item">
+                        <a href="javascript:void(0)" class="depth2-link"
+                          >집단상담</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="gnb-item">
+                  <a href="javascript:void(0)" class="gnb-link"
+                    >경력개발센터 프로그램</a
+                  >
+                  <div class="depth2">
+                    <ul class="depth2-list">
+                      <li class="depth2-item">
+                        <a href="javascript:void(0)" class="depth2-link"
+                          >진로검사</a
+                        >
+                      </li>
+                      <li class="depth2-item">
+                        <a href="javascript:void(0)" class="depth2-link"
+                          >진로특강</a
+                        >
+                      </li>
+                      <li class="depth2-item">
+                        <a href="javascript:void(0)" class="depth2-link"
+                          >맞춤형 멘토링 프로그램</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="gnb-item">
+                  <a href="javascript:void(0)" class="gnb-link"
+                    >프로그램 신청</a
+                  >
+                  <div class="depth2">
+                    <ul class="depth2-list">
+                      <li class="depth2-item">
+                        <a href="javascript:void(0)" class="depth2-link"
+                          >개인심리상담 신청</a
+                        >
+                      </li>
+                      <li class="depth2-item">
+                        <a href="javascript:void(0)" class="depth2-link"
+                          >경력개발센터<br />프로그램 신청</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="gnb-item">
+                  <a href="javascript:void(0)" class="gnb-link">게시판</a>
+                  <div class="depth2">
+                    <ul class="depth2-list">
+                      <li class="depth2-item">
+                        <a href="javascript:void(0)" class="depth2-link"
+                          >공지사항</a
+                        >
+                      </li>
+                      <li class="depth2-item">
+                        <a href="javascript:void(0)" class="depth2-link"
+                          >사진첩</a
+                        >
+                      </li>
+                      <li class="depth2-item">
+                        <a href="javascript:void(0)" class="depth2-link"
+                          >참여후기</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="snsSitemap d-flex">
+              <div class="sitemap">
+                <div class="sitemap-button__wrap">
+                  <button type="button" class="sitemap-button"></button>
+                </div>
+
+                <div class="sitemap-menu">
+                  <div class="sitemap-header">
+                    <div class="sitemap-header__inner">
+                      <div class="logo">
+                        <a href="./index.html"></a>
+                      </div>
+                      <div class="sitemap-button__close">
+                        <button type="button" class="button-close"></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sitemap-menu__inner">
+                    <ul class="sitemap-menu__list">
+                      <li class="sitemap-menu__item">
+                        <a href="javascript:void(0)" class="sitemap-menu__link"
+                          >생생원 소개</a
+                        >
+                        <div class="depth2">
+                          <ul class="depth2-list">
+                            <li class="depth2-item">
+                              <a href="javascript:void(0)" class="depth2-link"
+                                >인사말</a
+                              >
+                            </li>
+                            <li class="depth2-item">
+                              <a href="javascript:void(0)" class="depth2-link"
+                                >조직도</a
+                              >
+                            </li>
+                            <li class="depth2-item">
+                              <a href="javascript:void(0)" class="depth2-link"
+                                >오시는 길</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="sitemap-menu__item">
+                        <a href="javascript:void(0)" class="sitemap-menu__link"
+                          >심리상담센터<br />프로그램</a
+                        >
+                        <div class="depth2">
+                          <ul class="depth2-list">
+                            <li class="depth2-item">
+                              <a href="javascript:void(0)" class="depth2-link"
+                                >개인심리 상담</a
+                              >
+                            </li>
+                            <li class="depth2-item">
+                              <a href="javascript:void(0)" class="depth2-link"
+                                >집단상담</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="sitemap-menu__item">
+                        <a href="javascript:void(0)" class="sitemap-menu__link"
+                          >경력개발센터<br />프로그램</a
+                        >
+                        <div class="depth2">
+                          <ul class="depth2-list">
+                            <li class="depth2-item">
+                              <a href="javascript:void(0)" class="depth2-link"
+                                >진로검사</a
+                              >
+                            </li>
+                            <li class="depth2-item">
+                              <a href="javascript:void(0)" class="depth2-link"
+                                >진로특강</a
+                              >
+                            </li>
+                            <li class="depth2-item">
+                              <a href="javascript:void(0)" class="depth2-link"
+                                >맞춤형 멘토링 프로그램</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="sitemap-menu__item">
+                        <a href="javascript:void(0)" class="sitemap-menu__link"
+                          >프로그램 신청</a
+                        >
+                        <div class="depth2">
+                          <ul class="depth2-list">
+                            <li class="depth2-item">
+                              <a href="javascript:void(0)" class="depth2-link"
+                                >개인심리상담 신청</a
+                              >
+                            </li>
+                            <li class="depth2-item">
+                              <a href="javascript:void(0)" class="depth2-link"
+                                >경력개발센터</a
+                              >
+                            </li>
+                            <li class="depth2-item">
+                              <a href="javascript:void(0)" class="depth2-link"
+                                >프로그램 신청</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="sitemap-menu__item">
+                        <a href="javascript:void(0)" class="sitemap-menu__link"
+                          >게시판</a
+                        >
+                        <div class="depth2">
+                          <ul class="depth2-list">
+                            <li class="depth2-item">
+                              <a href="javascript:void(0)" class="depth2-link"
+                                >공지사항</a
+                              >
+                            </li>
+                            <li class="depth2-item">
+                              <a href="javascript:void(0)" class="depth2-link"
+                                >사진첩</a
+                              >
+                            </li>
+                            <li class="depth2-item">
+                              <a href="javascript:void(0)" class="depth2-link"
+                                >참여후기</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="contents contents-sub">
+        <div class="contents__inner">
+          <div class="breadcrumb">
+            <div class="breadcrumb__inner">
+              <ul class="breadcrumb-list">
+                <li class="breadcrumb-item">
+                  <a
+                    class="breadcrumb-link breadcrumb-link__home"
+                    href="javascript:void(0)"
+                  ></a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a
+                    class="breadcrumb-link breadcrumb-link__depth1"
+                    href="javascript:void(0)"
+                    >심리상담센터 프로그램</a
+                  >
+                </li>
+                <li class="breadcrumb-item">
+                  <a
+                    class="breadcrumb-link breadcrumb-link__depth2"
+                    href="javascript:void(0)"
+                    >개인심리 상담</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="contents-flex">
+            <div class="contents-flex__inner">
+              <div class="lnb">
+                <div class="lnb__inner">
+                  <div class="lnb-title">심리상담센터 프로그램</div>
+                  <ul class="lnb-list">
+                    <li class="lnb-item is-active">
+                      <a class="lnb-link" href="javascript:void(0)">개인심리 상담</a>
+                    </li>
+                    <li class="lnb-item">
+                      <a class="lnb-link" href="javascript:void(0)">집단 상담</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="contents-core">
+                <div class="contents-core__inner">
+                  <div class="contents-core__title">개인심리상담</div>
+                  
+                    <div class="greeting">
+                      <div class="greeting__inner">
+                          <div class="greeting-top">
+                              <div class="greeting-top__text">
+                                  안녕하세요? <br>
+                                  <strong>인문대 학생생활문화원(생생원)</strong> 홈페이지에 오신 것을 환영합니다.
+                              </div>
+                          </div>
+                          <div class="greeting-bottom">
+                              <div class="greeting-bottom__inner">
+                                  <div class="greeting-box">
+                                      <div class="greeting-box__tit greeting-box__tit--color-blue">저희 생생원은 서울대학교 인문대에 재학하고 있는 모든 학생들에게 정신적 지지와 실용적 진로 가이드를 제공하기 위해 설립되었습니다.</div>
+                                      <div class="greeting-box__txt">
+                                          인생의 봄 같은 대학생 시절, 꿈도 희망도 많지만, 자신과 세상에 대해 질문과 고민도 많은 시기이죠. 내가 누구인지, 앞으로 무엇을 <br>
+                                          어떻게 해야 할지 길을 잃은 것 같은 느낌이 들 때, 주저하지 말고 신양관 3층에 있는 생생원을 방문해 주세요.<br>
+                                          전문적인 상담사 선생님들과 프로그램들이 여러분을 돕고자 기다리고 있습니다.
+                                      </div>
+                                  </div>
+                                  <div class="greeting-box">
+                                      <div class="greeting-box__tit">생생원의 프로그램은 크게 심리상담과 경력개발 두 가지로 구성되어 있습니다. </div>
+                                      <div class="greeting-box__txt">
+                                          심리상담센터에서는 대학생 심리상담 경험이 풍부한 임상심리 전공 상담사 선생님들께서 여러분의 고민을 들어주고 전문적인 조언을 해주고 계십니다.  <br>
+  온라인 상담신청이나 면대면 상담내용 모두 철저히 비밀이 보장되고 있으니 남에게 말하기 어려운 고민이 있을 때 가벼운 마음으로 <br>
+  생생원을 찾아오시면 됩니다.
+                                      </div>
+                                  </div>
+                                  <div class="greeting-box">
+                                      <div class="greeting-box__tit">경력개발센터에서는 인문대생 여러분들의 진로탐색을 도와드리고 있습니다.</div>
+                                      <div class="greeting-box__txt">
+                                          진로특강과 맞춤형 멘토링 프로그램에 참여하여 사회의 다양한 분야에서 활동하시는 선배님들의 살아있는 경험담과 조언을 듣고 어떤 직업이 나에게<br>
+  적합한지 간접적으로 체험해 보세요. 또한, 직업흥미 및 성격이해를 바탕으로 진로 결정을 돕는 각종 검사들을 받으실 수 있으며,<br>
+  검사결과에 대한 해석 · 상담도 받으실 수 있습니다.
+                                      </div>
+                                  </div>
+                                  <div class="greeting-box">
+                                      <div class="greeting-box__tit">생생원의 목표는 보다 유익하고 즐거운 대학생활을 위해 여러분의 필요에 부응하는 실질적인 도움을 제공하는 것입니다.</div>
+                                      <div class="greeting-box__txt">
+                                          매 학기 초 모집하는 생생지원단에 가입하여 저희가 더 나은 프로그램을 만들어갈 수 있도록 피드백을 주세요. <br>
+  생생원은 언제나 여러분의 제안과 요청에 귀를 기울일 준비가 되어 있습니다.
+                                      </div>
+                                  </div>
+                                  <div class="greeting-box">
+                                      <div class="greeting-box__tit">인문대생 여러분, 위로와 격려가 필요할 때, 인생의 나침반이 절실할 때, 생생원이 여러분 곁에 있습니다.</div>
+                                  </div>
+
+                                  <div class="greeting-box greeting-name">
+                                      <div class="greeting-name__text">인문대 학생생활문화원장</div>
+                                      <div class="greeting-name__img"><img src="../resource/image/sub/img-greeting__name.png" alt=""></div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+
+
+
+                  <div class="map">
+                    <div class="map__inner">
+                      <div class="map-img">
+                        <img src="../resource/image/sub/img-map.jpg" alt="" />
+                      </div>
+                      <div class="map-desc">
+                        (08826) 서울특별시 관악구 관악로1, 서울대학교 인문관 4동
+                        신양인문학술정보관 313호 학생생활문화원
+                      </div>
+                    </div>
+
+                   
+                    <div class="sub-item">
+                      <div class="sub-item__tit">문의처</div>
+                      <div class="sub-item__cont">
+
+
+                        <div class="counter-wrap">
+                          <div class="counter-box">
+
+                            <div class="counter-num__title counter-num__icon--call">
+                              Tel.
+                            </div>
+
+                            <div class="counter-num__sort">
+                              |
+                            </div>
+
+                            <div class="counter-num__desc">
+                              (02)880-6087
+                            </div>
+                          </div>
+
+                          <div class="counter-box">
+
+                            <div class="counter-num__title counter-num__icon--fax">
+                              Fax.
+                            </div>
+
+                            <div class="counter-num__sort">
+                              |
+                            </div>
+
+                            <div class="counter-num__desc">
+                              (02)880-6087
+                            </div>
+                          </div>
+
+                          <div class="counter-box">
+
+                            <div class="counter-num__title counter-num__icon--mail">
+                              E-Mail.
+                            </div>
+
+                            <div class="counter-num__sort">
+                              |
+                            </div>
+
+                            <div class="counter-num__desc">
+                              cdcc@snu.ac.kr
+                            </div>
+                          </div>
+                        </div>
+
+
+                      </div>
+                    </div>
+
+
+
+                    <div class="sub-item">
+                      <div class="sub-item__tit">대중교통</div>
+                      <div class="sub-item__cont">
+                        <div class="traffic-wrap">
+
+
+                          <div class="traffic-box">
+							
+                            <ul class="traffic-box__ul">
+                              <li class="traffic-box__ul__li">
+                                <span>호선 신림역 3번출구</span> 앞시내버스 5516 승차  →  서울대 본부 앞 정류장에서 하차 후 인문대방향으로 도보 이동
+                              </li>
+                              <li class="traffic-box__ul__li">
+                                <span>호선 낙성대역 4번출구</span> 앞 마을버스 02번 승차   →  노천강당 정류장에서 하차 후 사범대 지나 인문대방향으로 도보 이동
+                              </li>
+                              <li class="traffic-box__ul__li">
+                                <span>호선 서울대입구역 3번출구 앞</span> 시내버스 5511 승차  →  관악사 삼거리 정류장에서 하차 후 사범대 지나 인문대방향으로 도보 이동
+                              </li>
+                            </ul>
+
+                          </div>
+                          
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer footer-sub">
+        <div class="footer__inner">
+          <div class="footer-top">
+            <div class="footer-top__inner">
+              <a
+                href="javascript:void(0)"
+                class="footer-link footer-link__privacy"
+                >개인정보처리방침</a
+              >
+              <a href="javascript:void(0)" class="footer-link"
+                >이메일무단수집거부</a
+              >
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer-bottom__inner">
+              <div class="footer-logo">
+                <a href="javascript:void(0)"></a>
+              </div>
+              <div class="footer-txt">
+                <div class="footer-txt__info">
+                  <div class="footer-txt__info--top">
+                    <ul class="footer-txt__info--ul">
+                      <li class="footer-txt__info--li">
+                        <span>주소</span>(08826) 서울시 관악구 관악로 1
+                        서울대학교 인문대학 학생생활문화원 (신양인문학술정보관
+                        307호,313호)
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="footer-txt__info--bottom">
+                    <ul class="footer-txt__info--ul">
+                      <li class="footer-txt__info--li">
+                        <span>TEL.</span>02-880-6087
+                      </li>
+                      <li class="footer-txt__info--li">
+                        <span>FAX.</span>02-880-6087
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer-txt__copyright">
+                  ©2022 Career Development & Counseling Center, College of
+                  Humanities . All rights reserved.
+                </div>
+              </div>
+              <div class="footer-sns">
+                <ul class="footer-sns__list">
+                  <li class="footer-sns__item">
+                    <a
+                      href="javascript:void(0)"
+                      class="footer-sns__link footer-sns__link--facebook"
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-site">
+                <select class="footer-site__select">
+                  <option value="">관련사이트</option>
+                  <option value="http://www.snu.ac.kr" target="_blank">
+                    서울대학교
+                  </option>
+                  <option value="http://humanities.snu.ac.kr" target="_blank">
+                    인문대학
+                  </option>
+                  <option value="http://snucounsel.snu.ac.kr" target="_blank">
+                    대학생활문화원
+                  </option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script></script>
+</html>
