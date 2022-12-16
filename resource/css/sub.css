@@ -505,14 +505,8 @@ label {
   background-position: center;
 }
 .sub-visual__text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   height: calc(100% - 3.5rem);
   padding-top: 10rem;
@@ -821,6 +815,87 @@ label {
   content: "";
 }
 
+/* 지도 */
+.map-desc {
+  padding: 4rem 6 crem;
+  text-align: center;
+  background-color: #f6f8fa;
+  color: #333333;
+}
+
+.counter-wrap {
+  display: flex;
+}
+.counter-box {
+  display: flex;
+  align-items: center;
+  padding: 2rem 1.8rem 2.5rem 1.8rem;
+}
+.counter-box:first-child {
+  padding: 2rem 1.8rem 2.5rem 0;
+}
+.counter-num {
+  display: flex;
+  align-items: center;
+}
+.counter-num__title {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.counter-num__sort {
+  margin: 0 0.8rem;
+  color: #d6dbea;
+}
+.counter-num__desc {
+  font-size: 1.6rem;
+}
+.counter-num__icon--call::before {
+  display: inline-block;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: 1rem;
+  background: url(../image/sub/icon-call.png);
+  content: "";
+}
+.counter-num__icon--fax::before {
+  display: inline-block;
+  width: 1.7rem;
+  height: 1.8rem;
+  margin-right: 1rem;
+  background: url(../image/sub/icon-fax.png);
+  content: "";
+}
+.counter-num__icon--mail::before {
+  display: inline-block;
+  width: 1.7rem;
+  height: 1.4rem;
+  margin-right: 1rem;
+  background: url(../image/sub/icon-mail.png);
+  content: "";
+}
+
+.traffic-box__ul__li {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.traffic-box__ul__li:last-child {
+  margin-bottom: 0;
+}
+.traffic-box__ul__li span {
+  margin-right: 0.5rem;
+  font-weight: 500;
+  display: inline-flex;
+}
+.traffic-box__ul__li span:before {
+  display: inline-block;
+  width: 1.7rem;
+  height: 1.8rem;
+  background: url(../image/sub/icon-traffic__2.png);
+  content: "";
+}
+
 /*== 게시판 ==*/
 /* 참여후기 */
 .lock-box {
@@ -855,12 +930,7 @@ label {
 
 .cell-wrap {
   display: flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 .cell-col + .cell-col {
