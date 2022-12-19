@@ -254,12 +254,6 @@
         line-height: 3rem;
         color: #333333;
         word-break: keep-all;
-        &--center{
-          border-top:1px solid #dce8f3;
-          border-bottom:1px solid #dce8f3;
-          text-align: center;
-          padding:5rem 0;
-        }
         
         span{
           font-weight: 500;
@@ -267,12 +261,14 @@
       }
       &-img + &-txt{        
         margin-top:3rem;      
-      } 
+      }
+      &-rec{
+        border: 1px solid #dce8f3; 
+        text-align: center;   
+        padding:5rem 0;    
+      }
       &-cbox{
-        border-top: 1px solid #dce8f3;
-        border-bottom: 1px solid #dce8f3;
         margin-top:5rem;
-        padding: 5rem 0;
         display: flex;
         justify-content: center;
       }
@@ -280,7 +276,7 @@
       &-ul{
         &__li{
             display: flex;
-            margin-bottom: 2rem;
+            margin-bottom: 1.3rem;
             &:last-child{
                 margin-bottom: 0;
             }
@@ -301,7 +297,7 @@
           li{
             color:#193988;
             font-weight: 500;
-            margin-bottom: 2rem;
+            margin-bottom: 1.3rem;
             &:last-child{
                 margin-bottom: 0;
             }
@@ -514,29 +510,31 @@
 }
 
 .traffic{
-    &-box{
-        &__ul{
-            &__li{
-                display: flex;
-                margin-bottom: 2rem;
-                &:last-child{
-                    margin-bottom: 0;
-                }
-                span{
-                    margin-right: 0.5rem;
-                    font-weight: 500;
-                    display: inline-flex;
-                    &:before{
-                        display: inline-block;
-                        width: 1.7rem;
-                        height: 1.8rem;
-                        background: url(../image/sub/icon-traffic__2.png);
-                        content: "";
-                    }
-                }
+  &-box{
+    &__ul{
+      &__li{
+        display: flex;
+        margin-bottom: 2rem;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        span{
+            margin-right: 0.5rem;
+            font-weight: 500;
+            display: inline-flex;
+            &:before{
+                display: inline-block;
+                width: 1.7rem;
+                height: 1.8rem;
+                background: url(../image/sub/icon-traffic__2.png);
+                background-repeat: no-repeat;
+                margin-right: 0.3rem;
+                content: "";
             }
         }
+      }
     }
+  }
 }
 
 /*== 심리상담센터 프로그램 ==*/
