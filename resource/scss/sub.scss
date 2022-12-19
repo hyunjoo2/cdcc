@@ -540,13 +540,25 @@
 }
 
 /*== 심리상담센터 프로그램 ==*/
+/* 개인심리상담 */
 
+.personal{
+  &__inner{    
+    .ui-buttons{
+      margin-top: 3rem;
+      .ui-button{
+        line-height: 4.5rem;
+      }
+    }
+  }
+}
 
 /* 집단 상담 */
 .group{
   &__inner{    
     .ui-buttons{
       margin-top: 3rem;
+      
     }
   }
 }

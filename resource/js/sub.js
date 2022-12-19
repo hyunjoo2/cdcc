@@ -23,6 +23,8 @@ $(function(){
         }
     });
 
-
+    $(".group-counsel").on("click",function(){
+        alert("신청기간이 아닙니다")
+    })
 });
 
