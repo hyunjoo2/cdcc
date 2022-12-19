@@ -541,49 +541,10 @@
 
 /*== 심리상담센터 프로그램 ==*/
 
-/* 개인심리 상담 */
-.personal{
-  &-img{
-    margin-top:3rem;
-  }
-  &-box{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    border-bottom: 1px solid #d6dbea;
-    padding-bottom: 5rem;
-    margin-top:4rem;
-    &__txt{
-      margin-top:3rem;
-      font-size: 1.8rem;
-      line-height: 3.2rem;
-      color: #333333;
-    }
-    
-  }
-}
 
 /* 집단 상담 */
 .group{
-  &__inner{
-    .sub-item{
-      &:nth-child(1){
-        margin-top: 3rem;
-      }
-      &__cont{
-        &-img{
-          margin-top: 0;
-          margin-bottom: 5rem;
-        }
-      }
-    }
-
-    &__btn{
-      margin-top:3rem;
-      display: flex;
-      justify-content: center;
-    }
-
+  &__inner{    
     .ui-buttons{
       margin-top: 3rem;
     }
@@ -591,9 +552,6 @@
 }
 
 
-/*== 경력개발센터 프로그램 ==*/
-
-/* 진로 검사 */
 
 /*==========================================================================================================================================================================================================================================================================*/
 
