@@ -354,13 +354,11 @@ body{
     header{
         height: 12rem !important;    
         overflow: visible;
-        
         .sitemap{
             &.open{
                 -ms-touch-action: none;
                 touch-action: none;
                 .sitemap{
-                    
                     &-header{
                         @include display-flex;
                         @include align-center;
@@ -428,13 +426,16 @@ body{
                             justify-content: flex-start;
                             position: relative;
                             width: 44.706%;
-                            height:15rem;
+                            height:auto;
                             margin-bottom: 0;
-                            padding: 0 4.5rem;
-                            font-weight: 400;
-                            font-size: 3.2rem;
+                            padding: 3rem 4.5rem;
+                            font: {
+                                size: 3.2rem;
+                                weight: 500;
+                            };
                             background: #f2faff;
                             color:#000000;
+                            line-height: 1.88;
                             &::after{
                                 display:none;
                             }
@@ -458,16 +459,17 @@ body{
                             height: calc(100vh - 10rem);
                             background: #ffffff;
                             z-index: 1;
+                            
                             &-item{
                                 border-bottom: 1px solid #c6cdde;
                             }
                             &-link{
                                 display: inline-block;
                                 width:100%;
-                                padding:3.4rem 4.5rem;
+                                padding:4.6rem 4.5rem;
                                 font : {
                                     size: 2.8rem;
-                                    weight:400;
+                                    weight:500;
                                 }
                                 line-height: 100%;
                                 color:#000000;
@@ -478,7 +480,9 @@ body{
                 
             }
             button{
-                margin-left: 1rem
+                width: 3.5rem;
+                height: 3.25rem;
+                margin-left: 1rem;
             }
         }
        
@@ -486,6 +490,13 @@ body{
             a{
                 width:19rem;
                 height:3.5rem;
+            }
+        }
+    }
+    .header{
+        &-logo{
+            a{
+                width: 26.3rem;
             }
         }
     }

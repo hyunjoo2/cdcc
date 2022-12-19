@@ -178,11 +178,73 @@
 
 @media screen and(max-width:720px){
     .footer{
+        &-logo{
+            margin-right:0;
+            a{
+                width: 37.2rem;
+                height: 8.7rem;
+            }
+        }
+        &-link{
+            font-size: 2.5rem;
+        }
+        &-top{
+            &__inner{
+                height: 8rem;
+                padding: 0 4rem;
+            }
+        }
         &-bottom__inner{
             flex-wrap: wrap;
+            padding: 4.5rem;
+            justify-content:center;
         }
         &-txt{
             width:100%;
+            margin-top: 5rem;
+            &__info{
+                &--li{
+                    text-align: center;
+                    font-size: 2.4rem;
+                    line-height: 4rem;
+                    span{
+                        font-size: 2.4rem;
+                    }
+                }
+                &--bottom{
+                    margin-top: 0;
+                    text-align: center;
+                }
+            }
+            &__copyright{
+                margin-bottom: 4rem;
+                font-size: 2.1rem;                
+                line-height: 1.43;
+                text-align: center;
+            }
+        }
+        &-sns{
+            margin-left: 0;
+            &__link{
+                width: 6rem;
+                height: 6rem;
+                &--facebook{
+                    background-size: 6rem;
+                }
+            }
+        }
+        &-site{
+            width: 100%;
+            margin-left: 0rem;
+            margin-top: 3rem;
+            &__select{
+                width:100%;
+                height: 11rem;
+                padding: 0 5.5rem ;
+                font-size: 3rem;
+                background-position: right 5rem center;
+                background-size: 2.4rem 1.35rem;
+            }
         }
     }
 }

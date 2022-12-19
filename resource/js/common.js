@@ -166,6 +166,7 @@ $(function () {
 	$(gnbmenuLiMobile).children().next().hide();
 	$(gnbmenuLiMobile).first().children().next().show();
 
+	$(gnbmenuLiMobile).first().addClass("on");
 	$(gnbmenuLiMobile).children().click(function () {
 		$(this).parent().addClass("on");
 		$(this).parent().siblings().removeClass("on");
