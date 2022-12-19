@@ -1521,6 +1521,12 @@ label {
   .depart-photo__item {
     width: 50%;
   }
+  .depart-photo__link:hover::before {
+    display: none;
+  }
+  .depart-photo__link:hover .depart-photo__info {
+    display: none;
+  }
   .section-title {
     font-size: 3.6rem;
   }

@@ -1012,8 +1012,21 @@
         height: auto !important;
         padding: 5rem 2.5rem 6.25rem 2.5rem;
     }
-    .depart-photo__item{
-        width:50%;
+    .depart-photo{
+        &__item{
+            width:50%;
+        }
+        &__link{
+            &:hover{
+                &::before{
+                    display: none;
+                }
+                .depart-photo__info{
+                    display: none;
+                }
+            }
+        }
+        
     }
     .section{
         &-title{
