@@ -904,10 +904,10 @@ label {
 
 /*== 심리상담센터 프로그램 ==*/
 /* 개인심리 상담 */
-.psycho-img {
+.personal-img {
   margin-top: 3rem;
 }
-.psycho-box {
+.personal-box {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -915,25 +915,25 @@ label {
   padding-bottom: 5rem;
   margin-top: 4rem;
 }
-.psycho-box__txt {
+.personal-box__txt {
   margin-top: 3rem;
   font-size: 1.8rem;
   line-height: 3.2rem;
   color: #333333;
 }
-.psycho-box__ul__li {
+.personal-box__ul__li {
   display: flex;
   margin-bottom: 2rem;
 }
-.psycho-box__ul__li:last-child {
+.personal-box__ul__li:last-child {
   margin-bottom: 0;
 }
-.psycho-box__ul__li:before {
+.personal-box__ul__li:before {
   display: inline-block;
   margin-right: 0.6rem;
   content: "·";
 }
-.psycho-box__ul__li span {
+.personal-box__ul__li span {
   margin-right: 0.5rem;
   font-weight: 500;
   display: inline-flex;
