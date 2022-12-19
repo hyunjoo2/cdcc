@@ -737,28 +737,35 @@ label {
 }
 .sub-item__cont-rec {
   border: 1px solid #dce8f3;
+  border-radius: 0.3rem;
   text-align: center;
   padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .sub-item__cont-cbox {
+  border-top: 1px solid #dce8f3;
+  border-bottom: 1px solid #dce8f3;
+  padding: 5rem 0;
   margin-top: 5rem;
   display: flex;
   justify-content: center;
 }
 .sub-item__cont-ul__li {
   display: flex;
-  margin-bottom: 1.3rem;
+  margin-bottom: 2rem;
 }
 .sub-item__cont-ul__li:last-child {
   margin-bottom: 0;
 }
 .sub-item__cont-ul__li:before {
   display: inline-block;
-  margin-right: 0.6rem;
+  margin-right: 0.8rem;
   content: "·";
 }
 .sub-item__cont-ul__li span {
-  margin-right: 0.5rem;
   font-weight: 500;
   display: inline-flex;
 }
@@ -775,7 +782,7 @@ label {
 }
 .sub-item__cont-ul--blue li:before {
   display: inline-block;
-  margin-right: 0.6rem;
+  margin-right: 0.3rem;
   content: "*";
 }
 .sub-item__cont-ul--blue li span {
@@ -920,7 +927,7 @@ label {
   font-weight: 600;
 }
 .counter-num__sort {
-  margin: 0 0.8rem;
+  margin: 0 1.3rem;
   color: #d6dbea;
 }
 .counter-num__desc {
@@ -959,11 +966,13 @@ label {
   margin-bottom: 0;
 }
 .traffic-box__ul__li span {
-  margin-right: 0.5rem;
   font-weight: 500;
   display: inline-flex;
 }
-.traffic-box__ul__li span:before {
+.traffic-box__ul__li span:nth-child(1) {
+  margin-right: 0.5rem;
+}
+.traffic-box__ul__li span:nth-child(1):before {
   display: inline-block;
   width: 1.7rem;
   height: 1.8rem;
@@ -972,9 +981,21 @@ label {
   margin-right: 0.3rem;
   content: "";
 }
+.traffic-box__ul__li span:nth-child(2) {
+  margin: 0 0.5rem;
+}
 
 /*== 심리상담센터 프로그램 ==*/
 /* 개인심리상담 */
+.personal__inner .sub-item__cont-ul__li {
+  margin-bottom: 2.2rem;
+}
+.personal__inner .sub-item__cont-ul__li:last-child {
+  margin-bottom: 0;
+}
+.personal__inner .sub-item__cont-ul__li span {
+  margin-left: 0.3rem;
+}
 .personal__inner .ui-buttons {
   margin-top: 3rem;
 }
