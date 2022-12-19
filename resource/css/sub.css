@@ -553,6 +553,7 @@ label {
   width: 1.3rem;
   height: 1.4rem;
   background: url(../image/sub/icon-home.png);
+  background-size: 1.3rem 1.4rem;
 }
 .breadcrumb-link__depth2 {
   font-weight: 500;
@@ -1008,7 +1009,6 @@ label {
   margin-top: 3rem;
 }
 
-/*==========================================================================================================================================================================================================================================================================*/
 /*== 게시판 ==*/
 /* 참여후기 */
 .lock-box {
@@ -1062,5 +1062,49 @@ label {
 @media screen and (max-width: 1024px) {
   .lnb {
     display: none;
+  }
+  .breadcrumb__inner {
+    height: 8rem;
+    padding: 0 4rem;
+  }
+  .breadcrumb-link {
+    font-size: 2.5rem;
+  }
+  .breadcrumb-link__home {
+    width: 2.3rem;
+    height: 2.5rem;
+    background-size: 2.3rem 2.5rem;
+  }
+  .breadcrumb-item + .breadcrumb-item::before {
+    width: 1.1rem;
+    height: 2rem;
+    margin: 0 1.5rem;
+    background-image: url(../image/sub/icon-breadcrumb.svg);
+    background-size: 1.1rem 2rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .contents__inner {
+    padding-top: 12rem;
+  }
+  .contents-core__title {
+    padding-left: 4rem;
+    font-size: 4.5rem;
+    line-height: 1.33;
+    margin-bottom: 3rem;
+  }
+  .greeting-top {
+    height: auto;
+    background: #0e255e;
+  }
+  .greeting-top__text {
+    padding: 11.5rem 8.5rem 8.6rem 8.5rem;
+    font-size: 3.8rem;
+    line-height: 1.58;
+    word-break: keep-all;
+  }
+  .greeting-top__text strong {
+    font-size: 3.8rem;
+    line-height: 1.58;
   }
 }
