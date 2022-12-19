@@ -143,12 +143,12 @@
 }
 .sitemap{
     &-button{
-        width:3.2rem;
-        height: 3.1rem;
+        width:3rem;
+        height: 2.6rem;
         padding:0;
         background: none;
         background: url(../image/common/icon/icon-sitemap.png) no-repeat;
-        background-size: cover;
+        background-size: 3rem 2.6rem;
     }
     &-header{
         .logo{
@@ -206,8 +206,8 @@
                         &__close{
                             margin-left: auto;
                             button{
-                                width: 2.9rem;
-                                height:2.9rem;
+                                width: 2.8rem;
+                                height:2.8rem;
                                 background: url(../image/common/icon/icon-sitemap__close.png);
                             }
                         }
@@ -323,123 +323,57 @@ body{
 /*=================================================================================================
 ============================================ responsive ========================================
 ================================================================================================*/ 
-@media screen and(max-width:1730px){
-    header {
-        .gnb {
-            ul{
-                position: relative;
-            }
-            .gnb-menu {
-        
-                > li > a{
-                    padding: 0 4rem;
-                }
-            }
+@media screen and(max-width:1280px){
+    .gnb-link{
+        padding: 0 1.5rem;
+    }
+    .gnb-menu{
+        .depth2-list{
+            padding: 3.5rem 1.5rem 5.5rem;
         }
     }
-
-}
-@media screen and(max-width:1500px){
-    header{
-        .gnb{
-            >ul{
-                >li{
-                    >a{
-                        padding:0 4rem;
-                    }
-                }
-            }
-        } 
-    } 
-}
-@media screen and(max-width:1400px){
-    header{
-        .gnb{
-            //padding:0 4.5rem;
-            position:fixed;
-            top:0;
-            right:-100%;
-            width:100%;
-            height:100%;
-            background: #ffffff;
-            
-            >ul{
-                position: relative;
-                width:90%;
-                >li{
-                    flex:1;
-                    >a{
-                        padding: 0rem;
-                    }
-                }
-            }
-            
-        }
-    }
-}
-@media screen and(max-width:1200px){
-    
 }
 @media screen and(max-width:1024px){
-    header{
-        .gnb{
-            &_wrap{
-                padding:0 3rem;
-                .inner{
-                    padding:0;
-                }
-            }
-        }
-        &.main{
-            .gnb{
-                &_wrap{
-                    .inner{
-                        padding:0;
-                    }
-                }
-            } 
-        }
-        .logo{
-            a{
-                width:22.2rem;
-                height:4rem;
-            }
-        }
+    .gnb{
+        display: none;
     }
-    #fp-nav{
-        display: none !important;
+    header{
+        padding: 0 4rem;
+    }
+    .sitemap.open .sitemap-header__inner{
+        padding: 0 4rem;
     }
 }
 @media screen and(max-width:720px){
     .sns.pc{
         display: none;
     }
+    .gnb_wrap{
+        height: 12rem;
+    }
     header{
+        height: 12rem !important;    
         overflow: visible;
-        &.main{
-            height: 10rem !important;    
-        }
+        
         .sitemap{
             &.open{
                 -ms-touch-action: none;
                 touch-action: none;
                 .sitemap{
+                    
                     &-header{
                         @include display-flex;
                         @include align-center;
                         position: relative;
                         width:100%;
-                        height:10rem;
-                        padding: 0 3rem;
+                        height:12rem;
+                        padding: 0 4.5rem;
                         flex:none;
-                        &::before{
-                            position: absolute;
-                            left: 0;
-                            bottom:0;
-                            width:100%;
-                            height:1px;
-                            background: #e1e1e1;
-                            content:""
+                        border:0;
+                        box-shadow: 0 .6rem 1.2rem 0 rgba(0, 0, 0, 0.12);
+                        z-index: 2;
+                        &__inner{
+                            padding: 0
                         }
                         .logo{
                             display: block;
@@ -460,83 +394,88 @@ body{
                             position: fixed;
                             z-index: 3;
                             padding-right:3rem;
+                            &__close{
+                                button{
+                                    width:3.5rem;
+                                    height:3.5rem;
+                                    background-size: 3.5rem
+                                }
+                            }
                         }
-                        &__inner > ul {
+                        &__list{
                             @include flex-column;
                             height:100%;
                             margin-top: 0rem;
                             padding-top:0rem;
-                            background: #4e811f;
-                            >li{
-                                @include display-flex;
-                                position:relative;
-                                padding:0rem;
-                                flex:none;
-                                
-                                // &+li{
-                                    
-                                // }
-                                // &:last-child{
-                                //     padding-bottom:20rem;
-                                // }
-                                >a{
-                                    @include d-flex;
-                                    position: relative;
-                                    width: 28%;
-                                    height:15rem;
-                                    margin-bottom: 0;
-                                    font-weight: 400;
-                                    font-size: 2.8rem;
-                                    background: #4e811f;
+                            background: #f2faff;
+                            
+                        }   
+                        &__item{
+                            @include display-flex;
+                            position:relative;
+                            padding:0rem;
+                            flex:none;
+                            &.on{
+                                .sitemap-menu__link{
+                                    background: #143586;
                                     color:#ffffff;
-                                    &+.depth2{
-                                        position:fixed;
-                                        top: 10rem;
-                                        left: 28%;
-                                        width: calc(100% - 28%);
-                                        height: calc(100vh - 10rem);
-                                        background: #ffffff;
-                                        z-index: 1;
-                                        ul{
-                                            //margin-top: -2rem;
-                                            padding:2rem 20px 2rem 20px;
-                                        }
-                                        li{
-                                            &+li{
-                                                border-top: 1px solid #e1e1e1;
-                                            }
-                                        }
-                                        a{
-                                            display: inline-block;
-                                            width:100%;
-                                            padding:4.1rem 0;
-                                            font : {
-                                                size: 2.6rem;
-                                                weight:400;
-                                            }
-                                            line-height: 100%;
-                                            color:#000000;
-                                        }
-                                    }
-                                    &::after{
-                                        display:none;
-                                    }
-                                    &::before{
-                                        position: absolute;
-                                        bottom: 0;
-                                        left:0;
-                                        width:100%;
-                                        height:1px;
-                                        background: rgba(255, 255, 255, .3);
-                                        z-index: 0;
-                                        content: "";
-                                    }
                                 }
-                            }  
+                            }
+                        } 
+                        &__link{
+                            @include display-flex;
+                            @include align-center;
+                            justify-content: flex-start;
+                            position: relative;
+                            width: 44.706%;
+                            height:15rem;
+                            margin-bottom: 0;
+                            padding: 0 4.5rem;
+                            font-weight: 400;
+                            font-size: 3.2rem;
+                            background: #f2faff;
+                            color:#000000;
+                            &::after{
+                                display:none;
+                            }
+                            &::before{
+                                position: absolute;
+                                bottom: 0;
+                                left:0;
+                                width:100%;
+                                height:1px;
+                                background: rgba(255, 255, 255, .3);
+                                z-index: 0;
+                                content: "";
+                            } 
                         }
-                        
+
+                        .depth2{
+                            position:fixed;
+                            top: 12rem;
+                            left: 44.706%;
+                            width: calc(100% - 44.706%);
+                            height: calc(100vh - 10rem);
+                            background: #ffffff;
+                            z-index: 1;
+                            &-item{
+                                border-bottom: 1px solid #c6cdde;
+                            }
+                            &-link{
+                                display: inline-block;
+                                width:100%;
+                                padding:3.4rem 4.5rem;
+                                font : {
+                                    size: 2.8rem;
+                                    weight:400;
+                                }
+                                line-height: 100%;
+                                color:#000000;
+                            }
+                        }
                     }
                 }
+                
             }
             button{
                 margin-left: 1rem

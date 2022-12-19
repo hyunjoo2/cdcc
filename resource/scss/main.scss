@@ -789,185 +789,79 @@
             }
         }
     }
+    .quickmenu-txt{
+        width: 50%;
+    }
 }
 
 
 @media screen and(max-width:900px){
-    #section{    
-        &2{
-            height: auto !important;
-            padding: {
-                top:7rem;
-                bottom:15rem;
-            }
-            .board-wrap{
-                flex-wrap: wrap;
-                margin-top: 6rem;
-            }
-            // .tab-content{
-            //     .tab-pane{
-            //         .notice{
-            //             &__inner{
-            //                 padding:2rem 4rem;
-            //             }
-            //         }
-            //     }
-            // }
-            .banner{
-                width:100%;
-                margin-left: 0;
-                margin-top: 2rem;
-                &__inner{
-                    width:100%;
-                    .swiper{
-                        &-slide{
-                            a{
-                                display: block;
-                                width:100%;
-                                img{
-                                    display: block;
-                                    margin: 0 auto;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
     .mousescroll{
         display: none;
     }
+    .quickmenu-link{
+        padding: 4rem 3rem;
+    }
 }
 @media screen and(max-width:720px){
-    #section{
-        @for $index from 2 through 3 {
-            &#{$index}{
-                padding-left:0;
-                padding-right:0;
-            }
+    .main-text{
+        &__wrap{
+            max-width: 100%;
+            padding: 0 6rem;
         }
-        &1{
-            .text{
-                h1{
-                    line-height: normal;
-                    br{
-                        display: block;
-                    }
-                }
-                p{
-                    line-height: normal;
-                }
-                
-            }
+        &__name, &__dep{
+            text-align: right;
+            font-weight: 400;
         }
-        &2{
-            .tab-content{
-                .tab-pane{
-                    .notice{
-                        &__inner{
-                            flex-direction: column;
-                            padding:3rem 4rem;
-                        }
-                        &-item{
-                            &.first{
-                                width: 100%;
-                                margin-right: 0;
-                            }
-                            &.other{
-                                margin-top: 2rem;
-                            }
-                        }
-
-                    }
-                }
-            }
-            .banner{
-                //max-height: 50rem;
-                &__inner{
-                    height: auto;
-                    .swiper{
-                        &-container{
-                            height: 100%;
-                        }
-                        &-slide{
-                            a{
-                                height: 100%;
-                                img{
-                                    width:100%;
-                                    //height: 100%;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+        &__name{
+            font-size: 3.6rem;
         }
-        &4{
-            .newsletter{
-                &-des{
-                    line-height: 3rem;
-                }
-            }
-        }
-    }
-    .section:not(:first-child){
-        >div{
-            padding:0 3rem;
+        &__dep{
+            font-size: 5rem;
         }
     }
     .quickmenu{
         &__inner{
-            div{
-                >a{
-                    @include d-flex;
-                    padding: {
-                        top: 0rem;
-                        left: 1rem;
-                        right:1rem;
-                    }
-                    &::before, &::after{
-                        display: none;
-                    }
-                    
-                }
-                .txt{
-                    display: none;
-                    visibility: visible;
-                    br{
-                        display:none;
-                    }
-                }
-            }
-        }
-    }
-    .tab-content .tab-pane .notice{
-        &__inner{
-            padding:4rem;
+            bottom: 5rem;
+            padding:0 2.5rem;
+            max-width: 100%;
+            background: transparent;
         }
         &-item{
-            &.first{
-                a{
-                    font-size: 1.8rem;
-                    .tit{
-                        height: 7rem;
-                        line-height: 3.5rem;
-                    }
-                    .txt{
-                        font-size: 1.8rem;
-                        line-height: 3.2rem;
-                        height: 6.5rem;
-                        -webkit-line-clamp: 2;
-                    }
+            background: #193988;
+            &:hover{
+                .quickmenu-link{
+                    left: 0;
                 }
             }
-            .tit{
-                height: 2.8rem;
-                line-height: 2.8rem;
+            @for $i from 1 through 3 {
+                &:nth-child(#{$i}){
+                    &:hover{
+                        background-image: none;
+                    }
+                    .quickmenu{
+                        &:hover{
+                            background-image: none;
+                        }
+                        &-link{
+                            &:hover{
+                                width: 100%;
+                                height: 100%;
+                                background-image: none;
+                                background-repeat: no-repeat;
+                            }
+                        }
+                        &-ico{
+                            background-image: url(../image/main/quickmenu-icon0#{$i}__active.png);
+                        }
+                    }
+                   
+                }
             }
-            .date{
-                font-size: 1.8rem;
-            }
+        }
+        
+        &-txt{
+            color: #ffffff;
         }
     }
 }
