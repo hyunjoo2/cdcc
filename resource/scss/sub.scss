@@ -254,9 +254,82 @@
         line-height: 3rem;
         color: #333333;
         word-break: keep-all;
+        &--center{
+          border-top:1px solid #dce8f3;
+          border-bottom:1px solid #dce8f3;
+          text-align: center;
+          padding:5rem 0;
+        }
+        
+        span{
+          font-weight: 500;
+        }
       }
+      &-img + &-txt{        
+        margin-top:3rem;      
+      } 
+      &-cbox{
+        border-top: 1px solid #dce8f3;
+        border-bottom: 1px solid #dce8f3;
+        margin-top:5rem;
+        padding: 5rem 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      &-ul{
+        &__li{
+            display: flex;
+            margin-bottom: 2rem;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            &:before{
+              display: inline-block;
+              margin-right:0.6rem;
+              content: "·";
+            }
+            span{
+                margin-right: 0.5rem;
+                font-weight: 500;
+                display: inline-flex;              
+            }
+            
+        }
+        &--blue{
+          margin-top:2rem;
+          li{
+            color:#193988;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            &:before{
+              display: inline-block;
+              margin-right:0.6rem;
+              content: "*";
+            }
+            span{
+                margin-right: 0.5rem;
+                font-weight: 500;
+                display: inline-flex;              
+            }
+          }
+        }          
+      }      
+
       &-tit {
         font-weight: 500;
+        &:nth-of-type(n+3){
+          margin-top:3rem;
+        }        
+        &--blue{
+          color:#143586;
+        }
+      }
+      &-img {
+        margin-top: 1.5rem;
       }
     }
   }
@@ -486,73 +559,42 @@
       line-height: 3.2rem;
       color: #333333;
     }
-    &__ul{
-      &__li{
-          display: flex;
-          margin-bottom: 2rem;
-          &:last-child{
-              margin-bottom: 0;
-          }
-          &:before{
-            display: inline-block;
-            margin-right:0.6rem;
-            content: "·";
-          }
-          span{
-              margin-right: 0.5rem;
-              font-weight: 500;
-              display: inline-flex;              
-          }
-      }
-    }
+    
   }
 }
 
 /* 집단 상담 */
 .group{
-  &-box{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    &__txt{
-      margin-top:3rem;
-      font-size: 1.8rem;
-      line-height: 3.2rem;
-      color: #333333;
-      span{
-        margin-right: 0.5rem;
-        font-weight: 500;
-        display: inline-flex;              
+  &__inner{
+    .sub-item{
+      &:nth-child(1){
+        margin-top: 3rem;
+      }
+      &__cont{
+        &-img{
+          margin-top: 0;
+          margin-bottom: 5rem;
+        }
       }
     }
-    &__ul{
-        margin-top:2rem;
-      &__li{
-          color:#193988;
-          font-weight: 500;
-          margin-bottom: 2rem;
-          &:last-child{
-              margin-bottom: 0;
-          }
-          &:before{
-            display: inline-block;
-            margin-right:0.6rem;
-            content: "·";
-          }
-          span{
-              margin-right: 0.5rem;
-              font-weight: 500;
-              display: inline-flex;              
-          }
-      }
-    }
+
     &__btn{
       margin-top:3rem;
       display: flex;
       justify-content: center;
     }
+
+    .ui-buttons{
+      margin-top: 3rem;
+    }
   }
 }
+
+
+/*== 경력개발센터 프로그램 ==*/
+
+/* 진로 검사 */
+
 /*==========================================================================================================================================================================================================================================================================*/
 
 
