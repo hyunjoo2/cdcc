@@ -729,8 +729,71 @@ label {
   color: #333333;
   word-break: keep-all;
 }
+.sub-item__cont-tit span, .sub-item__cont-txt span {
+  font-weight: 500;
+}
+.sub-item__cont-img + .sub-item__cont-txt {
+  margin-top: 3rem;
+}
+.sub-item__cont-rec {
+  border: 1px solid #dce8f3;
+  text-align: center;
+  padding: 5rem 0;
+}
+.sub-item__cont-cbox {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+.sub-item__cont-ul__li {
+  display: flex;
+  margin-bottom: 1.3rem;
+}
+.sub-item__cont-ul__li:last-child {
+  margin-bottom: 0;
+}
+.sub-item__cont-ul__li:before {
+  display: inline-block;
+  margin-right: 0.6rem;
+  content: "·";
+}
+.sub-item__cont-ul__li span {
+  margin-right: 0.5rem;
+  font-weight: 500;
+  display: inline-flex;
+}
+.sub-item__cont-ul--blue {
+  margin-top: 2rem;
+}
+.sub-item__cont-ul--blue li {
+  color: #193988;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+}
+.sub-item__cont-ul--blue li:last-child {
+  margin-bottom: 0;
+}
+.sub-item__cont-ul--blue li:before {
+  display: inline-block;
+  margin-right: 0.6rem;
+  content: "*";
+}
+.sub-item__cont-ul--blue li span {
+  margin-right: 0.5rem;
+  font-weight: 500;
+  display: inline-flex;
+}
 .sub-item__cont-tit {
   font-weight: 500;
+}
+.sub-item__cont-tit:nth-of-type(n+3) {
+  margin-top: 3rem;
+}
+.sub-item__cont-tit--blue {
+  color: #143586;
+}
+.sub-item__cont-img {
+  margin-top: 1.5rem;
 }
 
 .counselor-wrap {
@@ -905,88 +968,23 @@ label {
   width: 1.7rem;
   height: 1.8rem;
   background: url(../image/sub/icon-traffic__2.png);
+  background-repeat: no-repeat;
+  margin-right: 0.3rem;
   content: "";
 }
 
 /*== 심리상담센터 프로그램 ==*/
-/* 개인심리 상담 */
-.personal-img {
+/* 개인심리상담 */
+.personal__inner .ui-buttons {
   margin-top: 3rem;
 }
-.personal-box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  border-bottom: 1px solid #d6dbea;
-  padding-bottom: 5rem;
-  margin-top: 4rem;
-}
-.personal-box__txt {
-  margin-top: 3rem;
-  font-size: 1.8rem;
-  line-height: 3.2rem;
-  color: #333333;
-}
-.personal-box__ul__li {
-  display: flex;
-  margin-bottom: 2rem;
-}
-.personal-box__ul__li:last-child {
-  margin-bottom: 0;
-}
-.personal-box__ul__li:before {
-  display: inline-block;
-  margin-right: 0.6rem;
-  content: "·";
-}
-.personal-box__ul__li span {
-  margin-right: 0.5rem;
-  font-weight: 500;
-  display: inline-flex;
+.personal__inner .ui-buttons .ui-button {
+  line-height: 4.5rem;
 }
 
 /* 집단 상담 */
-.group-box {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-.group-box__txt {
+.group__inner .ui-buttons {
   margin-top: 3rem;
-  font-size: 1.8rem;
-  line-height: 3.2rem;
-  color: #333333;
-}
-.group-box__txt span {
-  margin-right: 0.5rem;
-  font-weight: 500;
-  display: inline-flex;
-}
-.group-box__ul {
-  margin-top: 2rem;
-}
-.group-box__ul__li {
-  color: #193988;
-  font-weight: 500;
-  margin-bottom: 2rem;
-}
-.group-box__ul__li:last-child {
-  margin-bottom: 0;
-}
-.group-box__ul__li:before {
-  display: inline-block;
-  margin-right: 0.6rem;
-  content: "·";
-}
-.group-box__ul__li span {
-  margin-right: 0.5rem;
-  font-weight: 500;
-  display: inline-flex;
-}
-.group-box__btn {
-  margin-top: 3rem;
-  display: flex;
-  justify-content: center;
 }
 
 /*==========================================================================================================================================================================================================================================================================*/
