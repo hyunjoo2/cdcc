@@ -505,8 +505,14 @@ label {
   background-position: center;
 }
 .sub-visual__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   height: calc(100% - 3.5rem);
   padding-top: 10rem;
@@ -1018,7 +1024,12 @@ label {
 
 .cell-wrap {
   display: flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .cell-col + .cell-col {
