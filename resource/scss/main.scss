@@ -663,7 +663,8 @@
             transition: all .2s;
             &:hover{
                 .depart-photo__info{
-                    display: block;
+                    @include d-flex;
+                    flex-direction: column;
                 }
                 &::before{
                     display: block;
