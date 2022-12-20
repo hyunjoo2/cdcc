@@ -650,10 +650,13 @@
             position: absolute;
             top: 50%;
             left: 50%;
+            width:100%;
+            height:100%;
             text-align: center;
             line-height: 2.6rem;
             color:#ffffff;
             transform: translate(-50%, -50%);
+            z-index: 2;
         }
         &__link{
             position: relative;
@@ -663,6 +666,7 @@
                     display: block;
                 }
                 &::before{
+                    display: block;
                     position: absolute;
                     top: 0;
                     left: 0;
@@ -670,6 +674,7 @@
                     height: 100%;
                     background: rgba(25,57,136,0.9);
                     content: '';
+                    z-index: 1;
                 }
             }
         }
