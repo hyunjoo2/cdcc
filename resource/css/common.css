@@ -629,6 +629,12 @@ label {
     height: 36px;
     font-size: 14px;
   }
+  .button-more {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+    background-size: 2.5rem;
+  }
 }
 .icon {
   display: block;
@@ -1611,6 +1617,12 @@ label {
     height: 36px;
     font-size: 14px;
   }
+  .button-more {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+    background-size: 2.5rem;
+  }
 }
 .icon {
   display: block;
@@ -2068,7 +2080,7 @@ body.overflow-hidden #fp-nav {
     display: none;
   }
   .gnb_wrap {
-    height: 12rem;
+    height: 100%;
   }
   header {
     height: 12rem !important;
@@ -2129,7 +2141,7 @@ body.overflow-hidden #fp-nav {
     height: 3.5rem;
     margin: 0;
     padding: 0;
-    background-size: 3.5rem;
+    background-size: cover;
   }
   header .sitemap.open .sitemap-menu__list {
     -webkit-box-orient: vertical;
@@ -2214,13 +2226,14 @@ body.overflow-hidden #fp-nav {
     width: 3.5rem;
     height: 3.25rem;
     margin-left: 1rem;
-    background-size: 3.5rem 3.25rem;
+    background-size: cover;
   }
   header .logo a {
     width: 19rem;
     height: 3.5rem;
   }
   .header-logo a {
+    display: block;
     width: 26.3rem;
     height: 6.15rem;
   }
@@ -2403,6 +2416,9 @@ body.overflow-hidden #fp-nav {
     line-height: 4rem;
   }
   .footer-txt__info--li span {
+    font-size: 2.4rem;
+  }
+  .footer-txt__info--li a {
     font-size: 2.4rem;
   }
   .footer-txt__info--bottom {
