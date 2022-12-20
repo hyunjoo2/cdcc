@@ -202,13 +202,50 @@
         background-color: #fff;
         background-repeat: no-repeat;
         background-position: center;
+        flex: none;
         &__plus{
             margin-left: 1rem;
             background-image: url(../image/common/icon/icon-plus__black.png);
+            background-size: 1.6rem;
         }
         &__minus{
             margin-left: .5rem;
             background-image: url(../image/common/icon/icon-minus__black.png);
+            background-size: 1.6rem;
+        }
+    }
+}
+
+
+
+/*=================================================================================================
+============================================ responsive ========================================
+================================================================================================*/
+
+@media screen and(max-width:720px){
+    input, select{
+        height: 36px;
+        font-size: 14px;
+        text-indent: 16px;
+    }
+    .ui{
+        &-select{
+            background-position: right 16px center;
+        }
+    }
+    .filebox{
+        .upload-name{
+            width:55%;
+            font-size: 14px;
+        }
+        label{
+            height: 36px;
+            font-size: 14px;
+        }
+    }
+    .ui-label{
+        &__text{
+            font-size: 14px;
         }
     }
 }

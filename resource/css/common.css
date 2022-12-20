@@ -621,6 +621,15 @@ label {
   border: 1px solid #dbdfe8;
 }
 
+/*=================================================================================================
+============================================ responsive ========================================
+================================================================================================*/
+@media screen and (max-width: 720px) {
+  .ui-button {
+    height: 36px;
+    font-size: 14px;
+  }
+}
 .icon {
   display: block;
   width: 1.5rem;
@@ -907,16 +916,43 @@ label {
   background-color: #fff;
   background-repeat: no-repeat;
   background-position: center;
+  flex: none;
 }
 .filebox-button__plus {
   margin-left: 1rem;
   background-image: url(../image/common/icon/icon-plus__black.png);
+  background-size: 1.6rem;
 }
 .filebox-button__minus {
   margin-left: 0.5rem;
   background-image: url(../image/common/icon/icon-minus__black.png);
+  background-size: 1.6rem;
 }
 
+/*=================================================================================================
+============================================ responsive ========================================
+================================================================================================*/
+@media screen and (max-width: 720px) {
+  input, select {
+    height: 36px;
+    font-size: 14px;
+    text-indent: 16px;
+  }
+  .ui-select {
+    background-position: right 16px center;
+  }
+  .filebox .upload-name {
+    width: 55%;
+    font-size: 14px;
+  }
+  .filebox label {
+    height: 36px;
+    font-size: 14px;
+  }
+  .ui-label__text {
+    font-size: 14px;
+  }
+}
 .icon {
   display: block;
   width: 1.5rem;
@@ -1071,8 +1107,8 @@ label {
 }
 .board-view .view-file__icon {
   display: inline-block;
-  width: 1.2rem;
-  height: 1.4rem;
+  width: 12px;
+  height: 14px;
   margin-right: 0.9rem;
   background: url(../image/sub/icon-file__gray.png);
   vertical-align: middle;
@@ -1224,8 +1260,8 @@ label {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 1.7rem;
-  height: 1.9rem;
+  width: 17px;
+  height: 19px;
   margin: 0 auto;
   background: url(../image/sub/icon-file.png);
 }
@@ -1331,6 +1367,117 @@ label {
   color: #002379;
 }
 
+/*=================================================================================================
+============================================ responsive ========================================
+================================================================================================*/
+@media screen and (max-width: 720px) {
+  .table-wrap:not(.table-wrap__ver) {
+    overflow-x: scroll;
+  }
+  .table-wrap:not(.table-wrap__ver) table {
+    width: 720px;
+  }
+  .table-wrap .col-type {
+    width: 18rem !important;
+  }
+  .table-wrap .col-period {
+    width: 32.5rem !important;
+  }
+  .table-wrap .col-date {
+    width: 16rem !important;
+  }
+  .table-wrap thead th {
+    font-size: 2.8rem;
+    line-height: 5rem;
+  }
+  .table-wrap thead th + th::before {
+    top: 3.2rem;
+  }
+  .table-wrap tbody td {
+    font-size: 2.8rem;
+    line-height: 5rem;
+  }
+  .table-wrap tbody td .tit-link {
+    padding-right: 20px;
+    font-size: 2.8rem;
+    line-height: 5rem;
+  }
+  .paging-link {
+    width: 36px;
+    height: 36px;
+    font-size: 2.9rem;
+  }
+  .board-view .view-title {
+    font-size: 4.2rem;
+    line-height: normal;
+  }
+  .board-view .view-info .tit, .board-view .view-info .txt {
+    font-size: 2.8rem;
+  }
+  .board-view .view-info__li + li {
+    padding: 0 1rem;
+  }
+  .board-view .view-info__li + li::before {
+    top: 1rem;
+    left: -0.5rem;
+    height: 10px;
+  }
+  .board-view .view-file__link {
+    font-size: 2.8rem;
+    line-height: 5rem;
+  }
+  .board-view .view-content {
+    font-size: 2.9rem;
+    line-height: normal;
+  }
+  .board-view .view-content * {
+    font-size: 2.9rem;
+    line-height: normal;
+  }
+  .board-gallery__li {
+    width: 50%;
+  }
+  .board-gallery__tit {
+    font-size: 2.8rem;
+    line-height: 5rem;
+  }
+  .board-gallery__date {
+    font-size: 2.7rem;
+  }
+  .board-gallery__link:hover .board-gallery__img::before {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .board-top {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .board-top .search-box {
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 2rem;
+    margin-left: 0;
+  }
+  .board-top .search-box__right:not(.search-box__select) {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 8px;
+  }
+  .board-top .search-box__select {
+    width: calc(50% - 4px);
+  }
+  .board-top .search-box__select select {
+    width: 100%;
+  }
+  .board-top .search-box__right {
+    margin-left: 8px;
+  }
+  .board-top .search-box__right--only {
+    width: 100%;
+    margin-left: 0;
+  }
+}
 .icon {
   display: block;
   width: 1.5rem;
@@ -1456,6 +1603,15 @@ label {
   border: 1px solid #dbdfe8;
 }
 
+/*=================================================================================================
+============================================ responsive ========================================
+================================================================================================*/
+@media screen and (max-width: 720px) {
+  .ui-button {
+    height: 36px;
+    font-size: 14px;
+  }
+}
 .icon {
   display: block;
   width: 1.5rem;
@@ -2129,6 +2285,10 @@ body.overflow-hidden #fp-nav {
   font-weight: 500;
   color: #b6bdcd;
 }
+.footer-txt__info--li a {
+  font-size: 1.6rem;
+  color: #7a7c82;
+}
 .footer-txt__info--li + .footer-txt__info--li::before {
   display: inline-block;
   color: #37383a;
@@ -2190,7 +2350,7 @@ body.overflow-hidden #fp-nav {
   background: #ffffff;
 }
 .footer-sub .footer-logo a {
-  background-image: url(../image/common/footer-logo__sub.png);
+  background-image: url(../image/common/footer-logo__sub_.png);
 }
 .footer-sub .footer-sns__link--facebook {
   background-image: url(../image/common/footer-sns__sub.png);
@@ -2272,10 +2432,13 @@ body.overflow-hidden #fp-nav {
   }
   .footer-site__select {
     width: 100%;
-    height: 11rem;
+    height: 9rem;
     padding: 0 5.5rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
     background-position: right 5rem center;
     background-size: 2.4rem 1.35rem;
+  }
+  .footer-sub .footer-logo a {
+    background-image: url(../image/common/footer-logo__sub_.png);
   }
 }

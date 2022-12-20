@@ -72,8 +72,8 @@
                 background: #f9fbfd;
                 &__icon{
                     display: inline-block;
-                    width:1.2rem;
-                    height:1.4rem;
+                    width:12px;
+                    height:14px;
                     margin-right: .9rem;
                     background: url(../image/sub/icon-file__gray.png);
                     vertical-align: middle;
@@ -235,8 +235,8 @@
                     .icon{
                         &-file{
                             @include d-flex;
-                            width:1.7rem;
-                            height:1.9rem;
+                            width:17px;
+                            height:19px;
                             margin: 0 auto;
                             background: url(../image/sub/icon-file.png);
                         }
@@ -367,5 +367,155 @@
             border-color:#7da3ff;
             color:#002379;
         }
+    }
+}
+
+
+/*=================================================================================================
+============================================ responsive ========================================
+================================================================================================*/
+
+@media screen and(max-width:720px){
+    
+    .table-wrap {
+        &:not(.table-wrap__ver){
+            overflow-x: scroll;
+            table{
+                width:720px;
+            }
+        }
+        .col{
+            &-type{
+                width: 18rem !important;
+            }
+            &-period{
+                width: 32.5rem !important;
+            }
+            &-date{
+                width: 16rem !important;
+            }
+        }
+        thead{
+            th{
+                font-size: 2.8rem;
+                line-height: 5rem; 
+                &+th{
+                    &::before{
+                        top: 3.2rem;
+                    }
+                }
+            }
+        }
+        tbody {
+            td{
+                font-size: 2.8rem;
+                line-height: 5rem; 
+                .tit-link{
+                    padding-right: 20px;
+                    font-size: 2.8rem;
+                    line-height: 5rem; 
+                }
+            }
+        }
+    }
+    .paging{
+        &-link{
+            width: 36px;
+            height: 36px;
+            font-size: 2.9rem;
+        }
+    }
+    .board{
+        &-view{
+            .view{
+                &-title{
+                    font-size: 4.2rem;
+                    line-height: normal;
+                }
+                &-info{
+                    .tit, .txt{
+                        font-size: 2.8rem;
+                    }
+                    &__li{
+                        &+li{
+                            padding: 0 1rem;
+                            &::before{
+                                top: 1rem;
+                                left: -.5rem;
+                                height: 10px;
+                            }
+                        }
+                    }
+                }
+                &-file{
+                    &__link{
+                        font-size: 2.8rem;
+                        line-height: 5rem; 
+                    }
+                }
+                &-content{
+                    font-size: 2.9rem;
+                    line-height: normal;
+                    *{
+                        font-size: 2.9rem;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+        &-gallery{
+            &__li{
+                width:50%;
+            }
+            &__tit{
+                font-size: 2.8rem;
+                line-height: 5rem; 
+            }
+            &__date{
+                font-size: 2.7rem;
+                //line-height: 4.9rem; 
+            }
+            &__link{
+                &:hover{
+                    .board-gallery__img::before{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:480px){
+    .board-top{
+        flex-wrap: wrap;
+        flex-direction: column;
+        .search-box{
+            flex-wrap: wrap;
+            width:100%;
+            margin-top: 2rem;
+            margin-left: 0;
+            
+            &__right:not(.search-box__select){
+                width:100%;
+                margin-left: 0;
+                margin-top: 8px;
+            }
+            
+            &__select{
+                width:calc(50% - 4px);
+                select{
+                    width:100%;
+                }
+            }
+            &__right{
+                margin-left: 8px;
+                &--only{
+                    width: 100%;
+                    margin-left: 0;
+                }
+            }
+        }
+       
     }
 }
