@@ -510,7 +510,7 @@ label {
 }
 .main-visual .swiper-controller {
   position: absolute;
-  top: 55.5rem;
+  top: 44.5rem;
   left: 50%;
   bottom: auto;
   max-width: 140rem;
@@ -662,7 +662,7 @@ label {
 }
 .main-text {
   position: absolute;
-  top: 38rem;
+  top: 27rem;
   left: 50%;
   max-width: 140rem;
   width: 100%;
@@ -781,6 +781,7 @@ label {
 }
 .section__inner {
   height: 100%;
+  padding-top: 11rem;
 }
 .section-second {
   background: #f7fcff;
@@ -1575,6 +1576,9 @@ label {
   }
   .depart-photo__link:hover .depart-photo__info {
     display: none;
+  }
+  .section__inner {
+    padding-top: 0;
   }
   .section-title {
     font-size: 3.6rem;

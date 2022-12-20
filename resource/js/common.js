@@ -94,7 +94,7 @@ $(function () {
 			function headerClose() { //Tweenmax를 이용한 헤더 메뉴 슬라이드 close
 				TweenMax.killAll();
 				TweenMax.to($(".header"), .5, {
-					height: 110,
+					height: 11 + 'rem',
 					ease: 'easeOutExpo',
 					onComplete: function () {
 						$(".header").removeClass("open");
@@ -135,7 +135,7 @@ $(function () {
 				function headerOpen() { //Tweenmax를 이용한 헤더 메뉴 슬라이드 open
 					TweenMax.killAll();
 					TweenMax.to($(".header"), .5, {
-						height: 296,
+						height: 29.6 + 'rem',
 						ease: 'easeOutExpo'
 					});
 					$(".header").addClass("open");
@@ -144,7 +144,7 @@ $(function () {
 				function headerClose() { //Tweenmax를 이용한 헤더 메뉴 슬라이드 close
 					TweenMax.killAll();
 					TweenMax.to($(".header"), .5, {
-						height: 110,
+						height: 11 + 'rem',
 						ease: 'easeOutExpo',
 						onComplete: function () {
 							$(".header").removeClass("open");
