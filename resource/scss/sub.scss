@@ -584,12 +584,18 @@
 .group{
   &__inner{    
     .ui-buttons{
-      margin-top: 3rem;
-      
+      margin-top: 3rem;      
     }
-  }
+  } 
 }
 
+.birkman{
+  &_m{
+    display: none !important;
+  }
+
+}
+/* 진로검사 */
 
 /*== 게시판 ==*/
 
@@ -673,6 +679,9 @@
       }
     }
   }
+
+  
+
 }
 
 @media screen and(max-width:720px) {
@@ -700,6 +709,30 @@
       strong{
         font-size: 3.8rem;
         line-height: 1.58;
+      }
+    }
+  }
+
+  .birkman{
+    &__inner{
+    display: none !important;
+    }
+    &_m{
+      display: block !important;
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  .special{
+    &__inner{
+    display: none !important;
+    }
+    &_m{
+      display: block !important;
+      img{
+        width: 100%;
       }
     }
   }
