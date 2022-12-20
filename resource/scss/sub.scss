@@ -815,6 +815,13 @@
 }
 
 @media screen and(max-width:720px) {
+    .font{
+        &-size{
+            &__20{
+                font-size: 3.2rem;
+            }
+        }
+    }
     .contents {
         &__inner {
             padding-top: 12rem;
@@ -1034,6 +1041,13 @@
             }
 		}
 	}
+    .lock{
+        &-box{
+            .ui-input{
+                width:70%
+            }
+        }
+    }
 }
 
 @media screen and(max-width:480px){

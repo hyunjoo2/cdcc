@@ -232,7 +232,7 @@
     }
     .ui{
         &-input, &-textarea{
-            box-shadow: 0;
+            box-shadow: none;
             border-radius: 0;
         }
         &-select{

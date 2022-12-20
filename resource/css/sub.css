@@ -1132,6 +1132,9 @@ label {
   }
 }
 @media screen and (max-width: 720px) {
+  .font-size__20 {
+    font-size: 3.2rem;
+  }
   .contents__inner {
     padding-top: 12rem;
   }
@@ -1298,6 +1301,9 @@ label {
     width: 18px;
     height: 18px;
     background-size: 18px;
+  }
+  .lock-box .ui-input {
+    width: 70%;
   }
 }
 @media screen and (max-width: 480px) {

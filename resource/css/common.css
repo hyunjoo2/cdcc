@@ -949,7 +949,7 @@ label {
     border-radius: 0;
   }
   .ui-input, .ui-textarea {
-    box-shadow: 0;
+    box-shadow: none;
     border-radius: 0;
   }
   .ui-select {
@@ -1761,6 +1761,17 @@ label {
   width: 40rem;
 }
 
+/*=================================================================================================
+============================================ responsive ========================================
+================================================================================================*/
+@media screen and (max-width: 720px) {
+  .modal-header {
+    font-size: 3rem;
+  }
+  .modal-lock .modal-content {
+    width: 70%;
+  }
+}
 /* header */
 .header {
   position: absolute;
