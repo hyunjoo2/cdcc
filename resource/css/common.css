@@ -1767,6 +1767,7 @@ label {
   top: 0;
   left: 0;
   width: 100%;
+  height: 11rem !important;
   background: transparent;
   overflow: hidden;
   background: #ffffff;
@@ -2096,15 +2097,15 @@ body.overflow-hidden #fp-nav {
   .gnb_wrap {
     height: 100%;
   }
-  header {
+  .header {
     height: 12rem !important;
     overflow: visible;
   }
-  header .sitemap.open {
+  .header .sitemap.open {
     -ms-touch-action: none;
     touch-action: none;
   }
-  header .sitemap.open .sitemap-header {
+  .header .sitemap.open .sitemap-header {
     display: flex;
     display: -moz-box;
     display: -ms-flexbox;
@@ -2122,19 +2123,19 @@ body.overflow-hidden #fp-nav {
     box-shadow: 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.12);
     z-index: 2;
   }
-  header .sitemap.open .sitemap-header__inner {
+  .header .sitemap.open .sitemap-header__inner {
     padding: 0;
   }
-  header .sitemap.open .sitemap-header .logo {
+  .header .sitemap.open .sitemap-header .logo {
     display: block;
     width: 26.3rem;
     height: 6.15rem;
   }
-  header .sitemap.open .sitemap-header .logo a {
+  .header .sitemap.open .sitemap-header .logo a {
     background: url(../image/common/logo.png) no-repeat center;
     background-size: cover;
   }
-  header .sitemap.open .sitemap-menu {
+  .header .sitemap.open .sitemap-menu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2145,19 +2146,19 @@ body.overflow-hidden #fp-nav {
     touch-action: none;
     overflow: hidden;
   }
-  header .sitemap.open .sitemap-menu .sitemap-button {
+  .header .sitemap.open .sitemap-menu .sitemap-button {
     position: fixed;
     z-index: 3;
     padding-right: 3rem;
   }
-  header .sitemap.open .sitemap-menu .sitemap-button__close button {
+  .header .sitemap.open .sitemap-menu .sitemap-button__close button {
     width: 3.5rem;
     height: 3.5rem;
     margin: 0;
     padding: 0;
     background-size: cover;
   }
-  header .sitemap.open .sitemap-menu__list {
+  .header .sitemap.open .sitemap-menu__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2167,7 +2168,7 @@ body.overflow-hidden #fp-nav {
     padding-top: 0rem;
     background: #f2faff;
   }
-  header .sitemap.open .sitemap-menu__item {
+  .header .sitemap.open .sitemap-menu__item {
     display: flex;
     display: -moz-box;
     display: -ms-flexbox;
@@ -2177,11 +2178,11 @@ body.overflow-hidden #fp-nav {
     padding: 0rem;
     flex: none;
   }
-  header .sitemap.open .sitemap-menu__item.on .sitemap-menu__link {
+  .header .sitemap.open .sitemap-menu__item.on .sitemap-menu__link {
     background: #143586;
     color: #ffffff;
   }
-  header .sitemap.open .sitemap-menu__link {
+  .header .sitemap.open .sitemap-menu__link {
     display: flex;
     display: -moz-box;
     display: -ms-flexbox;
@@ -2202,10 +2203,10 @@ body.overflow-hidden #fp-nav {
     color: #000000;
     line-height: 1.88;
   }
-  header .sitemap.open .sitemap-menu__link::after {
+  .header .sitemap.open .sitemap-menu__link::after {
     display: none;
   }
-  header .sitemap.open .sitemap-menu__link::before {
+  .header .sitemap.open .sitemap-menu__link::before {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -2215,7 +2216,7 @@ body.overflow-hidden #fp-nav {
     z-index: 0;
     content: "";
   }
-  header .sitemap.open .sitemap-menu .depth2 {
+  .header .sitemap.open .sitemap-menu .depth2 {
     position: fixed;
     top: 12rem;
     left: 44.706%;
@@ -2224,10 +2225,10 @@ body.overflow-hidden #fp-nav {
     background: #ffffff;
     z-index: 1;
   }
-  header .sitemap.open .sitemap-menu .depth2-item {
+  .header .sitemap.open .sitemap-menu .depth2-item {
     border-bottom: 1px solid #c6cdde;
   }
-  header .sitemap.open .sitemap-menu .depth2-link {
+  .header .sitemap.open .sitemap-menu .depth2-link {
     display: inline-block;
     width: 100%;
     padding: 4.6rem 4.5rem;
@@ -2236,13 +2237,13 @@ body.overflow-hidden #fp-nav {
     line-height: 100%;
     color: #000000;
   }
-  header .sitemap button {
+  .header .sitemap button {
     width: 3.5rem;
     height: 3.25rem;
     margin-left: 1rem;
     background-size: cover;
   }
-  header .logo a {
+  .header .logo a {
     width: 19rem;
     height: 3.5rem;
   }
