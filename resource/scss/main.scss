@@ -171,6 +171,7 @@
                     }
                 }
             }
+            
         }
     }
     &-text{
@@ -225,7 +226,7 @@
             position: relative;
             width:1.8rem;
             height: 2.5rem;
-            border:.2rem solid #000000;   
+            border:.2rem solid #ffffff;   
             border-radius: 10rem;
             >span{
                 display: inline-block;
@@ -234,7 +235,7 @@
                 margin: {
                     top: .7rem;
                 }
-                background: #000000;
+                background: #ffffff;
                 border:0;   
                 border-radius: 100%;
                 -webkit-animation: scroll-inner 1.5s;
@@ -259,28 +260,30 @@
                     &:nth-child(1){
                         left: -.7rem;
                         bottom: -1.2rem;
-                        background: #828486;
+                        background: #ffffff;
                         transform: rotate(45deg);
-                        
+                        opacity: .8;
                     }
                     &:nth-child(2){
                         left: -.1rem;
                         bottom: -1.2rem;
-                        background: #828486;
+                        background: #ffffff;
                         transform: rotate(-45deg);
+                        opacity: .8;
                     }
                     &:nth-child(3){
                         left: -.7rem;
                         bottom: -1.9rem;
-                        background: #bcc0c3;
+                        background: #ffffff;
                         transform: rotate(45deg);
-                        
+                        opacity: .5;
                     }
                     &:nth-child(4){
-                        background: #bcc0c3;
+                        background: #ffffff;
                         transform: rotate(-45deg);
                         left: -.1rem;
                         bottom: -1.9rem;
+                        opacity: .5;
                     }
                 }
             }
@@ -769,31 +772,62 @@
     z-index: 0;
 }
 
-/* 메인비주얼 세번째 슬라이드의 경우 */ 
-.is-thirdSlide{
-    #fp-nav ul li a {
-        span{
-            outline: 0;
-            background: #ffffff;
-        }
-        &.active{
+.is-secondSlide{
+    #fp-nav ul li {
+        a{
             span{
+                background: #000000;
+            }
+            &.active span{
+                background-color: #000000;
                 &::before{
-                    border-color: rgba(255,255,255,.5);
-                    box-shadow: none;
+                    border: 1px solid rgba(0, 0, 0, 0.5);
                 }
             }
         }
     }
-    .mousescroll__inner {
-        .mouseswrap {
-            border-color: #ffffff;
-            > span{
-                background: #ffffff;
+    .mousescroll__inner{
+        .mouseswrap{
+            border-color: #000000;
+            >span{
+                background: #000000;
+                
+            }
+            .arrow{
+                span{
+                    &:nth-child(1){
+                        left: -.7rem;
+                        bottom: -1.2rem;
+                        background: #828486;
+                        transform: rotate(45deg);
+                        
+                    }
+                    &:nth-child(2){
+                        left: -.1rem;
+                        bottom: -1.2rem;
+                        background: #828486;
+                        transform: rotate(-45deg);
+                    }
+                    &:nth-child(3){
+                        left: -.7rem;
+                        bottom: -1.9rem;
+                        background: #bcc0c3;
+                        transform: rotate(45deg);
+                        
+                    }
+                    &:nth-child(4){
+                        background: #bcc0c3;
+                        transform: rotate(-45deg);
+                        left: -.1rem;
+                        bottom: -1.9rem;
+                    }
+                }
             }
         }
     }
 }
+/* 메인비주얼 세번째 슬라이드의 경우 */ 
+
 
 /*=================================================================================================
 ============================================ responsive ========================================

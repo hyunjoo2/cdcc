@@ -91,9 +91,9 @@ function mainVisualSwiper() {
 
     mySwiper.on('slideChangeTransitionEnd', function () {
         if(this.activeIndex == 1){
-            $(".main-visual").addClass("is-secondSlide");
+            $("body, .main-visual").addClass("is-secondSlide");
         }else{
-            $(".main-visual").removeClass("is-secondSlide");
+            $("body, .main-visual").removeClass("is-secondSlide");
         }
         if(this.activeIndex == 3){
             $("body, .section-first").addClass("is-thirdSlide");
