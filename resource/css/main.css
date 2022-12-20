@@ -1308,13 +1308,11 @@ label {
   .quickmenu-txt {
     width: 50%;
   }
-}
-@media screen and (max-width: 900px) {
+  #fp-nav {
+    display: none !important;
+  }
   .mousescroll {
     display: none;
-  }
-  .quickmenu-link {
-    padding: 4rem 3rem;
   }
 }
 @media screen and (max-width: 720px) {

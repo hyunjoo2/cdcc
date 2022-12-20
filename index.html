@@ -193,7 +193,7 @@
 									<div class="main-text__dep">인문대 학생생활문화원</div>
 								</div>
 							</div>
-							<div class="swiper-container">
+							<div class="swiper-container main-visual__swiper">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide"></div>
 									<div class="swiper-slide"></div>
@@ -550,30 +550,30 @@
 				}
 			},
 
-			afterLoad: function(index,anchorIndex){
-				jQuery('.section.active [data-aos]').addClass("aos-animate");
-				if(anchorIndex == '3'){
-					$(".counter-num").find("p").each(function (i) {
-						let max_count = $(this).data("count"); // 카운트 될 값
-						var scoreDisplay = this;
-						var count = {
-							score: 0
-						};
+			// afterLoad: function(index,anchorIndex){
+			// 	jQuery('.section.active [data-aos]').addClass("aos-animate");
+			// 	if(anchorIndex == '3'){
+			// 		$(".counter-num").find("p").each(function (i) {
+			// 			let max_count = $(this).data("count"); // 카운트 될 값
+			// 			var scoreDisplay = this;
+			// 			var count = {
+			// 				score: 0
+			// 			};
 
-						var tween1 = new TimelineMax();
-						tween1.to(count, 1, {
-							score: max_count,
-							roundProps: "score",
-							onUpdate: function () {
-								scoreDisplay.innerHTML = count.score.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-							},
-							ease: Linear.easeNone
-						});
+			// 			var tween1 = new TimelineMax();
+			// 			tween1.to(count, 1, {
+			// 				score: max_count,
+			// 				roundProps: "score",
+			// 				onUpdate: function () {
+			// 					scoreDisplay.innerHTML = count.score.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+			// 				},
+			// 				ease: Linear.easeNone
+			// 			});
 
 						
-					});
-				}
-			},
+			// 		});
+			// 	}
+			// },
 
 		});
 	})
