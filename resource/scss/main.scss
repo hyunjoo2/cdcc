@@ -1028,6 +1028,7 @@
                     top: 0;
                     width:1px;
                     height: 100%;
+                    z-index: 1;
                 }
             }
         }
@@ -1069,6 +1070,9 @@
             }
         }
         &__link{
+            display: inline-block;
+            width: 100%;
+            height: 100%;
             &:hover{
                 &::before{
                     display: none;
