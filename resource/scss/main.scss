@@ -644,9 +644,6 @@
                     max-height: 100%;
                 }
             }
-            &:nth-child(n+5){
-                display: none;
-            }
         }
         &__info{
             display: none;
@@ -1026,6 +1023,9 @@
     .depart-photo{
         &__item{
             width:50%;
+            &:nth-child(n+5){
+                display: none;
+            }
         }
         &__link{
             &:hover{

@@ -12,17 +12,14 @@ function mainVisualSwiper() {
 		init: true,
 		// Optional parameters
 		loop: false,
-	
 		autoplay: {
 			delay: autoPlayDelay
 		},
-
 		// If we need pagination
 		/*pagination: {
 			el: '.swiper-pagination',
 			type: 'progressbar'
 		},*/
-
     	// Navigation arrows
     	navigation: {
 			nextEl: '.swiper-button-next',
