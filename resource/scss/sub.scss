@@ -314,7 +314,7 @@
                 border: 1px solid #dce8f3;
                 border-radius: 0.3rem;
                 text-align: center;
-                padding: 5rem 0;
+                padding: 5rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -401,7 +401,11 @@
         }
     }
 }
-
+.org{
+    .table-wrap tbody td{
+        text-align: center;
+    }
+}
 
 .counselor {
     &-wrap {
@@ -666,10 +670,6 @@
 
         .ui-buttons {
             margin-top: 3rem;
-
-            .ui-button {
-                line-height: 4.5rem;
-            }
         }
     }
 }
@@ -1019,6 +1019,19 @@
 				margin-top: 1rem;
 				margin-left: 0;
 			}
+            .ui-checkbox{
+                &__inner{
+                    margin: 0;
+                }
+                &-block{
+                    padding: 0;
+                }
+                &-object{
+                    width: 18px;
+                    height: 18px;
+                    background-size: 18px;
+                }
+            }
 		}
 	}
 }

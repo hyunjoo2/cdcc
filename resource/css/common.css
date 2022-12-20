@@ -597,6 +597,7 @@ label {
   font-size: 1.6rem;
   text-align: center;
   border-radius: 0.3rem;
+  line-height: 4.6rem;
 }
 .ui-buttons {
   display: flex;
@@ -628,6 +629,7 @@ label {
   .ui-button {
     height: 36px;
     font-size: 14px;
+    line-height: 37px;
   }
   .button-more {
     width: 2.5rem;
@@ -823,7 +825,7 @@ label {
   border-color: #0737ba;
   background-color: #4571e9;
   background-image: url("../image/common/icon/icon-check.png");
-  background-size: 1.1rem 0.7rem;
+  background-size: 11px 7px;
 }
 .ui-label {
   display: -webkit-box;
@@ -943,6 +945,12 @@ label {
     height: 36px;
     font-size: 14px;
     text-indent: 16px;
+    appearance: none;
+    border-radius: 0;
+  }
+  .ui-input, .ui-textarea {
+    box-shadow: 0;
+    border-radius: 0;
   }
   .ui-select {
     background-position: right 16px center;
@@ -1399,6 +1407,10 @@ label {
   .table-wrap thead th + th::before {
     top: 3.2rem;
   }
+  .table-wrap tbody th {
+    font-size: 2.8rem;
+    line-height: 5rem;
+  }
   .table-wrap tbody td {
     font-size: 2.8rem;
     line-height: 5rem;
@@ -1585,6 +1597,7 @@ label {
   font-size: 1.6rem;
   text-align: center;
   border-radius: 0.3rem;
+  line-height: 4.6rem;
 }
 .ui-buttons {
   display: flex;
@@ -1616,6 +1629,7 @@ label {
   .ui-button {
     height: 36px;
     font-size: 14px;
+    line-height: 37px;
   }
   .button-more {
     width: 2.5rem;

@@ -743,7 +743,7 @@ label {
   border: 1px solid #dce8f3;
   border-radius: 0.3rem;
   text-align: center;
-  padding: 5rem 0;
+  padding: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -819,6 +819,10 @@ label {
 }
 .sub-item__cont-img img {
   max-width: 100%;
+}
+
+.org .table-wrap tbody td {
+  text-align: center;
 }
 
 .counselor-wrap {
@@ -1021,9 +1025,6 @@ label {
 }
 .personal__inner .ui-buttons {
   margin-top: 3rem;
-}
-.personal__inner .ui-buttons .ui-button {
-  line-height: 4.5rem;
 }
 
 /* 집단 상담 */
@@ -1286,6 +1287,17 @@ label {
   .cell-col + .cell-col {
     margin-top: 1rem;
     margin-left: 0;
+  }
+  .cell-col .ui-checkbox__inner {
+    margin: 0;
+  }
+  .cell-col .ui-checkbox-block {
+    padding: 0;
+  }
+  .cell-col .ui-checkbox-object {
+    width: 18px;
+    height: 18px;
+    background-size: 18px;
   }
 }
 @media screen and (max-width: 480px) {

@@ -124,7 +124,7 @@
             border-color: #0737ba;
             background-color: #4571e9;
             background-image: url('../image/common/icon/icon-check.png');
-            background-size: 1.1rem .7rem;
+            background-size: 11px 7px;
         }
     }
     &-label {
@@ -227,8 +227,14 @@
         height: 36px;
         font-size: 14px;
         text-indent: 16px;
+        appearance: none;
+        border-radius: 0;
     }
     .ui{
+        &-input, &-textarea{
+            box-shadow: 0;
+            border-radius: 0;
+        }
         &-select{
             background-position: right 16px center;
         }
