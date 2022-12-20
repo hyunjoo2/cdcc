@@ -30,7 +30,7 @@ select{-webkit-appearance: none;appearance: none;-moz-appearance: none;
     /* background: url('../images/common/search_select_arrow.png') no-repeat right 18px center; */
     color: #888888;}
 select::-ms-expand {display:none}
-input, select{height: 4.5rem;padding: 0;margin: 0;border: 1px solid #dbdfe8;box-sizing: border-box;color: #000;font-size: 1.6rem;vertical-align: middle;line-height: 4.2rem;text-indent: 1.5rem;}
+input, select{height: 4.5rem;padding: 0;margin: 0;border: 1px solid #dbdfe8;box-sizing: border-box;color: #000;font-size: 1.6rem;vertical-align: middle;line-height: 4.2rem;text-indent: 1.5rem; border-radius: 0;}
 legend{font-size: 0;text-indent: -100000px;left: -10000px;top: auto;height: 0;overflow: hidden;}
 
 /* HTML5 display-role reset for older browsers */
