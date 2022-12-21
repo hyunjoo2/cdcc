@@ -9,6 +9,8 @@
     background: transparent;
     overflow: hidden;
     background: #ffffff;
+    z-index: 2;
+    box-shadow: .3rem .3rem .8rem rgba(0,0,0,0.12);
     &-logo{
         a{
             display: inline-block;
@@ -18,11 +20,6 @@
             background-size: cover;
         }
     }
-    width:100%;
-    z-index: 1;
-    box-shadow: .3rem .3rem .8rem rgba(0,0,0,0.12);
-    
-    
     &.open{
         
         background: #ffffff;
