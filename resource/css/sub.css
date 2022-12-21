@@ -660,12 +660,14 @@ label {
   margin: 0 auto;
   padding: 6.5rem 0;
   font-size: 2.4rem;
+  font-weight: 500;
   color: #bed1ff;
   line-height: 3.6rem;
   text-align: center;
 }
 .greeting-top__text strong {
   font-size: 2.4rem;
+  font-weight: 500;
   color: #ffffff;
 }
 .greeting-top__text::before, .greeting-top__text::after {
@@ -719,7 +721,7 @@ label {
 }
 
 /* 조직도 */
-.sub-item {
+.sub-item + .sub-item {
   margin-top: 5rem;
 }
 .sub-item__tit {
@@ -753,7 +755,7 @@ label {
   border-top: 1px solid #dce8f3;
   border-bottom: 1px solid #dce8f3;
   padding: 5rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
   display: flex;
   justify-content: center;
 }
@@ -823,6 +825,9 @@ label {
 
 .org .table-wrap tbody td {
   text-align: center;
+}
+.org .sub-item {
+  margin-top: 5rem;
 }
 
 .counselor-wrap {
@@ -896,6 +901,7 @@ label {
   padding: 2.5rem 2rem;
 }
 .counselor-career__tit {
+  margin-bottom: 1.6rem;
   font-size: 1.6rem;
   font-weight: 500;
 }
@@ -929,6 +935,9 @@ label {
 .map-area .root_daum_roughmap .wrap_controllers {
   display: none;
 }
+.map .sub-item {
+  margin-top: 5rem;
+}
 
 .counter-wrap {
   display: flex;
@@ -954,6 +963,7 @@ label {
 .counter-num__sort {
   margin: 0 1.3rem;
   color: #d6dbea;
+  font-size: 1.5rem;
 }
 .counter-num__desc {
   font-size: 1.6rem;
@@ -995,9 +1005,6 @@ label {
   font-weight: 500;
   display: inline-flex;
 }
-.traffic-box__ul__li span:nth-child(1) {
-  margin-right: 0.5rem;
-}
 .traffic-box__ul__li span:nth-child(1):before {
   display: inline-block;
   width: 17px;
@@ -1010,6 +1017,9 @@ label {
 }
 .traffic-box__ul__li span:nth-child(2) {
   margin: 0 0.5rem;
+}
+.traffic-box__ul__li .icon-arrow__right {
+  margin: 0 0.7rem;
 }
 
 /*== 심리상담센터 프로그램 ==*/

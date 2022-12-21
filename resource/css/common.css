@@ -608,6 +608,9 @@ label {
 .ui-buttons__right {
   justify-content: flex-end;
 }
+.ui-buttons__right + .paging {
+  margin-top: 3rem;
+}
 .ui-button__width-m {
   width: 14.1rem;
 }
@@ -1064,10 +1067,6 @@ label {
 }
 .board-bottom {
   margin-top: 3rem;
-}
-.board-bottom .ui-buttons {
-  margin-top: -1rem;
-  margin-bottom: 3rem;
 }
 .board-view .view-header {
   padding: 3rem;
@@ -1608,6 +1607,9 @@ label {
 .ui-buttons__right {
   justify-content: flex-end;
 }
+.ui-buttons__right + .paging {
+  margin-top: 3rem;
+}
 .ui-button__width-m {
   width: 14.1rem;
 }
@@ -1781,8 +1783,7 @@ label {
   background: transparent;
   overflow: hidden;
   background: #ffffff;
-  width: 100%;
-  z-index: 1;
+  z-index: 2;
   box-shadow: 0.3rem 0.3rem 0.8rem rgba(0, 0, 0, 0.12);
 }
 .header-logo a {
@@ -1888,6 +1889,9 @@ label {
 }
 .gnb-item.on .depth2-link {
   font-weight: 500;
+}
+.gnb-item.on .depth2-link:hover {
+  font-weight: 600;
 }
 .gnb-link {
   display: flex;
@@ -2071,7 +2075,7 @@ label {
 }
 .sitemap.open .sitemap-menu .depth2-link:hover {
   color: #193988;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 body.overflow-hidden #fp-nav {
@@ -2269,6 +2273,9 @@ body.overflow-hidden #fp-nav {
   margin-top: 0;
 }
 
+.footer {
+  /* 푸터 서브 */
+}
 .footer-top {
   background: #1b3b86;
 }
@@ -2314,6 +2321,7 @@ body.overflow-hidden #fp-nav {
 .footer-txt__info--li {
   display: inline-block;
   font-size: 1.6rem;
+  font-weight: 500;
   color: #7a7c82;
   vertical-align: middle;
 }
@@ -2329,9 +2337,9 @@ body.overflow-hidden #fp-nav {
 }
 .footer-txt__info--li + .footer-txt__info--li::before {
   display: inline-block;
+  margin: 0 1rem;
   color: #37383a;
-  vertical-align: middle;
-  content: "ㅣ";
+  content: "|";
 }
 .footer-txt__info--bottom {
   margin-top: 1rem;
@@ -2339,6 +2347,7 @@ body.overflow-hidden #fp-nav {
 .footer-txt__copyright {
   margin-top: 2rem;
   font-size: 1.5rem;
+  font-weight: 500;
   color: #a3a6ab;
   opacity: 0.5;
 }
@@ -2402,10 +2411,16 @@ body.overflow-hidden #fp-nav {
   color: #747478;
 }
 .footer-sub .footer-text__info--li span {
-  color: #b4b4b4;
+  color: #a4a4a4;
+}
+.footer-sub .footer-txt__info--li {
+  color: #747478;
+}
+.footer-sub .footer-txt__info--li span {
+  color: #a4a4a4;
 }
 .footer-sub .footer-txt__copyright {
-  color: #a4a4a4;
+  color: #000000;
 }
 
 /*=================================================================================================

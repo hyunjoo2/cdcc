@@ -204,13 +204,19 @@
             position: relative;
             margin: 0 auto;
             padding: 6.5rem 0;
-            font-size: 2.4rem;
+            font: {
+                size: 2.4rem;
+                weight:500;
+            };
             color: #bed1ff;
             line-height: 3.6rem;
             text-align: center;
 
             strong {
-                font-size: 2.4rem;
+                font: {
+                    size: 2.4rem;
+                    weight:500;
+                };
                 color: #ffffff;
             }
 
@@ -285,7 +291,9 @@
 
 .sub {
     &-item {
-        margin-top: 5rem;
+        &+&{
+            margin-top: 5rem;
+        }
         &__tit {
             margin-bottom: 2.5rem;
 
@@ -324,7 +332,7 @@
                 border-top: 1px solid #dce8f3;
                 border-bottom: 1px solid #dce8f3;
                 padding: 5rem;
-                margin-top: 5rem;
+                margin-top: 3rem;
                 display: flex;
                 justify-content: center;
             }
@@ -404,6 +412,9 @@
 .org{
     .table-wrap tbody td{
         text-align: center;
+    }
+    .sub-item{
+        margin-top: 5rem;
     }
 }
 
@@ -491,8 +502,8 @@
 
     &-career {
         padding: 2.5rem 2rem;
-
         &__tit {
+            margin-bottom: 1.6rem;
             font: {
                 size: 1.6rem;
                 weight: 500;
@@ -538,6 +549,9 @@
             }
         }
     }
+    .sub-item{
+        margin-top: 5rem;
+    }
 }
 
 .counter {
@@ -569,6 +583,7 @@
         &__sort {
             margin: 0 1.3rem;
             color: #d6dbea;
+            font-size: 1.5rem;
         }
 
         &__desc {
@@ -623,7 +638,7 @@
                     font-weight: 500;
                     display: inline-flex;
                     &:nth-child(1) {
-                        margin-right: 0.5rem;
+                        //margin-right: 0.5rem;
                         &:before {
                             display: inline-block;
                             width: 17px;
@@ -637,6 +652,13 @@
                     }
                     &:nth-child(2) {
                         margin: 0 0.5rem;
+                    }
+                }
+                .icon{
+                    &-arrow{
+                        &__right{
+                            margin:0 .7rem;
+                        }
                     }
                 }
             }

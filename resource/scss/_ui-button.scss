@@ -24,6 +24,9 @@
         margin: 0 -.5rem;
         &__right{
             justify-content: flex-end;
+            &+.paging{
+                margin-top: 3rem;
+            }
         }
     }
     &__width{

@@ -57,7 +57,10 @@
         &__info{
             &--li{
                 display: inline-block;
-                font-size: 1.6rem;
+                font: {
+                    size: 1.6rem;
+                    weight:500;
+                };
                 color:#7a7c82;
                 vertical-align: middle;
                 span{
@@ -73,10 +76,10 @@
                 &+&{
                     &::before{
                         display: inline-block;
-                        //margin: 0 1rem;
+                        margin: 0 1rem;
                         color:#37383a;
-                        vertical-align: middle;
-                        content: 'ㅣ';
+                        //vertical-align: middle;
+                        content: '|';
                     }
                 }
             }
@@ -86,7 +89,10 @@
         }
         &__copyright{
             margin-top: 2rem;
-            font-size: 1.5rem;
+            font: {
+                size: 1.5rem;
+                weight:500;
+            };
             color:#a3a6ab;
             opacity: .5;
         }
@@ -121,6 +127,7 @@
             background: transparent url(../image/common/icon/footer-select.png) no-repeat center right 3rem;
         }
     }
+    /* 푸터 서브 */ 
     &-sub{
         .footer{
             &__inner{
@@ -160,14 +167,22 @@
                     &--li{
                         color:#747478;
                         span{
-                            color:#b4b4b4;
+                            color:#a4a4a4;
                         }
                     }
                 }
             }
             &-txt{
+                &__info{
+                    &--li{
+                        color: #747478;
+                        span{
+                            color:#a4a4a4;
+                        }
+                    }
+                }
                 &__copyright{
-                    color:#a4a4a4;
+                    color:#000000;
                 }
             }
         }
