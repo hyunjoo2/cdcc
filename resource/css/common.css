@@ -2338,7 +2338,9 @@ body.overflow-hidden #fp-nav {
 .footer-txt__info--li + .footer-txt__info--li::before {
   display: inline-block;
   margin: 0 1rem;
-  color: #37383a;
+  margin-top: -0.4rem;
+  color: #aaaaaa;
+  font-size: 1.5rem;
   content: "|";
 }
 .footer-txt__info--bottom {

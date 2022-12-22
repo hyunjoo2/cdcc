@@ -1381,6 +1381,11 @@ label {
 /*=================================================================================================
 ============================================ responsive ========================================
 ================================================================================================*/
+@media screen and (min-width: 1920px) {
+  .main-visual .swiper-slide:nth-child(1), .main-visual .swiper-slide:nth-child(2) {
+    background-position: center;
+  }
+}
 @media screen and (max-width: 1200px) {
   #section2 {
     padding: 0 3rem;

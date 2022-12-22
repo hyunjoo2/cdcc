@@ -882,6 +882,14 @@
 /*=================================================================================================
 ============================================ responsive ========================================
 ================================================================================================*/ 
+@media screen and(min-width:1920px){
+    .main-visual .swiper-slide{
+        &:nth-child(1), &:nth-child(2){
+            background-position: center;
+        }
+    }
+}
+
 @media screen and(max-width:1200px){
     #section{
         @for $index from 2 through 3 {
@@ -901,10 +909,6 @@
     }
 }
 
-
-// @media screen and(max-width:900px){
-    
-// }
 @media screen and(max-width:720px){
     .main{
         &-visual{
