@@ -439,20 +439,26 @@
         }
         &-write{
             &__wrap{
-                .form-select{
-                    width:100%;
+                .form{
+                    &-input, &-select{
+                        width:100%;
+                    }
                 }
                 td{
                     .ui{
                         &-form{
                             margin: 0;
                         }
-                        &-select{
+                        &-input, &-select{
                             width:100%;
                         }
                     }
                 }
-                
+                .cell{
+                    &-col{
+                        width:100%;
+                    }
+                }
             }
         }
     }

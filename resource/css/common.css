@@ -950,6 +950,7 @@ label {
     text-indent: 16px;
     appearance: none;
     border-radius: 0;
+    line-height: 37px;
   }
   .ui-input, .ui-textarea {
     box-shadow: none;
@@ -1447,13 +1448,16 @@ label {
     text-align: right;
     color: #747478;
   }
-  .table-write__wrap .form-select {
+  .table-write__wrap .form-input, .table-write__wrap .form-select {
     width: 100%;
   }
   .table-write__wrap td .ui-form {
     margin: 0;
   }
-  .table-write__wrap td .ui-select {
+  .table-write__wrap td .ui-input, .table-write__wrap td .ui-select {
+    width: 100%;
+  }
+  .table-write__wrap .cell-col {
     width: 100%;
   }
   .paging-link {
