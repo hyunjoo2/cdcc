@@ -1151,7 +1151,7 @@ label {
   .greeting-top {
     height: auto;
     margin: 0 -4rem;
-    background: #0e255e;
+    background: #193e9a;
   }
   .greeting-top__text {
     padding: 11.5rem 8.5rem 8.6rem 8.5rem;
@@ -1256,7 +1256,7 @@ label {
   }
   /* 지도 */
   .map-desc {
-    font-size: 3rem;
+    font-size: 2.6rem;
     line-height: 5.2rem;
   }
   .counter-wrap {
@@ -1265,6 +1265,12 @@ label {
   .counter-num__title, .counter-num__desc {
     font-size: 2.8rem;
     line-height: 5rem;
+  }
+  .counter-num__icon--call::before, .counter-num__icon--fax::before, .counter-num__icon--mail::before {
+    margin-right: 2rem;
+  }
+  .counter-num__sort {
+    margin: 0 2.5rem;
   }
   .counter-box {
     padding: 0;
@@ -1313,7 +1319,10 @@ label {
     background-size: 18px;
   }
   .lock-box .ui-input {
-    width: 70%;
+    width: 100%;
+  }
+  .personal__inner .ui-buttons {
+    margin-top: 5rem;
   }
 }
 @media screen and (max-width: 480px) {

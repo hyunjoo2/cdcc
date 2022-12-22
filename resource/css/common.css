@@ -958,13 +958,31 @@ label {
   .ui-select {
     background-position: right 16px center;
   }
+  .filebox-wrap {
+    margin: 0;
+  }
+  .filebox__inner {
+    flex-wrap: wrap;
+  }
   .filebox .upload-name {
-    width: 55%;
+    width: 100%;
     font-size: 14px;
   }
   .filebox label {
-    height: 36px;
+    width: 106px;
+    height: 30px;
     font-size: 14px;
+    margin-top: 5px;
+    margin-left: 0;
+  }
+  .filebox-button {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  .filebox + .filebox {
+    margin-top: 5px;
   }
   .ui-label__text {
     font-size: 14px;
@@ -1324,6 +1342,9 @@ label {
 .table-wrap .state-end {
   color: #747478;
 }
+.table-scroll__text {
+  display: none;
+}
 
 .paging__inner {
   display: flex;
@@ -1401,14 +1422,14 @@ label {
   }
   .table-wrap thead th {
     font-size: 2.8rem;
-    line-height: 5rem;
+    line-height: 4.5rem;
   }
   .table-wrap thead th + th::before {
     top: 3.2rem;
   }
   .table-wrap tbody th {
     font-size: 2.8rem;
-    line-height: 5rem;
+    line-height: 4.5rem;
   }
   .table-wrap tbody td {
     font-size: 2.8rem;
@@ -1419,10 +1440,32 @@ label {
     font-size: 2.8rem;
     line-height: 5rem;
   }
+  .table-scroll__text {
+    margin-top: 2rem;
+    font-size: 12px;
+    display: block;
+    text-align: right;
+    color: #747478;
+  }
+  .table-write__wrap .form-select {
+    width: 100%;
+  }
+  .table-write__wrap td .ui-form {
+    margin: 0;
+  }
+  .table-write__wrap td .ui-select {
+    width: 100%;
+  }
   .paging-link {
     width: 36px;
     height: 36px;
     font-size: 2.9rem;
+  }
+  .paging-link:nth-child(n+8) {
+    display: none;
+  }
+  .paging-link:nth-last-child(-n+2) {
+    display: block;
   }
   .board-view .view-title {
     font-size: 4.2rem;
@@ -1463,6 +1506,9 @@ label {
   }
   .board-gallery__link:hover .board-gallery__img::before {
     display: none;
+  }
+  .board-bottom {
+    margin-top: 5rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1858,7 +1904,7 @@ label {
   left: 0;
   width: 1px;
   height: 32rem;
-  background: #ededed;
+  background: #dce8f3;
   content: "";
 }
 .gnb-menu .depth2-link {
@@ -2255,7 +2301,7 @@ body.overflow-hidden #fp-nav {
     width: 3.5rem;
     height: 3.25rem;
     margin-left: 1rem;
-    background-size: cover;
+    background-size: 3.5rem;
   }
   .header .logo a {
     width: 19rem;
@@ -2445,7 +2491,7 @@ body.overflow-hidden #fp-nav {
   }
   .footer-bottom__inner {
     flex-wrap: wrap;
-    padding: 4.5rem;
+    padding: 7.5rem;
     justify-content: center;
   }
   .footer-txt {

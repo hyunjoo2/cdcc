@@ -854,7 +854,7 @@
         &-top {
             height: auto;
 			margin: 0 -4rem;
-            background: #0e255e;
+            background: #193e9a;
             &__text {
                 padding: 11.5rem 8.5rem 8.6rem 8.5rem;
                 font-size: 3.8rem;
@@ -990,7 +990,7 @@
 	/* 지도 */ 
 	.map{
 		&-desc{
-			font-size: 3rem;
+			font-size: 2.6rem;
 			line-height: 5.2rem;
 		}
 	}
@@ -1003,6 +1003,16 @@
 				font-size: 2.8rem;
 				line-height: 5rem;
 			}
+            &__icon{
+                &--call, &--fax, &--mail{
+                    &::before{
+                        margin-right: 2rem;
+                    }
+                }
+            }
+            &__sort{
+                margin: 0 2.5rem;
+            }
 		}
 		&-box{
 			padding: 0;
@@ -1066,8 +1076,13 @@
     .lock{
         &-box{
             .ui-input{
-                width:70%
+                width:100%
             }
+        }
+    }
+    .personal__inner {
+        .ui-buttons{
+            margin-top: 5rem;
         }
     }
 }

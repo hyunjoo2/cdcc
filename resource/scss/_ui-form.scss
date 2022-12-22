@@ -240,13 +240,31 @@
         }
     }
     .filebox{
+        &-wrap{
+            margin: 0;
+        }
+        &__inner{
+            flex-wrap: wrap;
+        }
         .upload-name{
-            width:55%;
+            width:100%;
             font-size: 14px;
         }
         label{
-            height: 36px;
+            width:106px;
+            height: 30px;
             font-size: 14px;
+            margin-top: 5px;
+            margin-left: 0;
+        }
+        &-button{
+            width: 30px;
+            height: 30px;
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+        &+&{
+            margin-top: 5px;
         }
     }
     .ui-label{

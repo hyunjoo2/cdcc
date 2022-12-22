@@ -311,7 +311,11 @@
             }
         }
     }
-    
+    &-scroll{
+        &__text{
+            display: none;
+        }
+    }
 }
 .paging{
     &__inner{
@@ -377,56 +381,93 @@
 
 @media screen and(max-width:720px){
     
-    .table-wrap {
-        &:not(.table-wrap__ver){
-            overflow-x: scroll;
-            table{
-                width:720px;
+    .table{
+        &-wrap {
+            &:not(.table-wrap__ver){
+                overflow-x: scroll;
+                table{
+                    width:720px;
+                }
+                
             }
-        }
-        .col{
-            &-type{
-                width: 18rem !important;
+            .col{
+                &-type{
+                    width: 18rem !important;
+                }
+                &-period{
+                    width: 32.5rem !important;
+                }
+                &-date{
+                    width: 16rem !important;
+                }
             }
-            &-period{
-                width: 32.5rem !important;
+            thead{
+                th{
+                    font-size: 2.8rem;
+                    line-height: 4.5rem; 
+                    &+th{
+                        &::before{
+                            top: 3.2rem;
+                        }
+                    }
+                }
             }
-            &-date{
-                width: 16rem !important;
-            }
-        }
-        thead{
-            th{
-                font-size: 2.8rem;
-                line-height: 5rem; 
-                &+th{
-                    &::before{
-                        top: 3.2rem;
+            tbody {
+                th{
+                    font-size: 2.8rem;
+                    line-height: 4.5rem; 
+                }
+                td{
+                    font-size: 2.8rem;
+                    line-height: 5rem; 
+                    .tit-link{
+                        padding-right: 20px;
+                        font-size: 2.8rem;
+                        line-height: 5rem; 
                     }
                 }
             }
         }
-        tbody {
-            th{
-                font-size: 2.8rem;
-                line-height: 5rem; 
+        &-scroll{
+            &__text{
+                margin-top: 2rem;
+                font-size: 12px;
+                display: block;
+                text-align: right;
+                color: #747478;
             }
-            td{
-                font-size: 2.8rem;
-                line-height: 5rem; 
-                .tit-link{
-                    padding-right: 20px;
-                    font-size: 2.8rem;
-                    line-height: 5rem; 
+        }
+        &-write{
+            &__wrap{
+                .form-select{
+                    width:100%;
                 }
+                td{
+                    .ui{
+                        &-form{
+                            margin: 0;
+                        }
+                        &-select{
+                            width:100%;
+                        }
+                    }
+                }
+                
             }
         }
     }
+    
     .paging{
         &-link{
             width: 36px;
             height: 36px;
-            font-size: 2.9rem;
+            font-size: 2.9rem;            
+            &:nth-child(n+8){
+                display: none;
+            }
+            &:nth-last-child(-n+2){
+                display: block;
+            }
         }
     }
     .board{
@@ -487,7 +528,11 @@
                 }
             }
         }
+        &-bottom{
+            margin-top: 5rem;
+        }
     }
+    
 }
 
 @media screen and(max-width:480px){

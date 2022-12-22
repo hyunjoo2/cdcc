@@ -566,7 +566,7 @@ label {
 .main-visual .swiper-slide:nth-child(1) {
   width: 100%;
   height: 100%;
-  background-image: url(../image/main/main-visual01.jpg);
+  background-image: url(../image/main/main-visual01__l.jpg);
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
@@ -574,7 +574,7 @@ label {
 .main-visual .swiper-slide:nth-child(2) {
   width: 100%;
   height: 100%;
-  background-image: url(../image/main/main-visual02.jpg);
+  background-image: url(../image/main/main-visual02__l.jpg);
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
@@ -582,7 +582,7 @@ label {
 .main-visual .swiper-slide:nth-child(3) {
   width: 100%;
   height: 100%;
-  background-image: url(../image/main/main-visual03.jpg);
+  background-image: url(../image/main/main-visual03__l.jpg);
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
@@ -590,7 +590,7 @@ label {
 .main-visual .swiper-slide:nth-child(4) {
   width: 100%;
   height: 100%;
-  background-image: url(../image/main/main-visual04.jpg);
+  background-image: url(../image/main/main-visual04__l.jpg);
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
@@ -859,6 +859,7 @@ label {
 }
 .section-third {
   background: url(../image/main/bg-section3.jpg) no-repeat center bottom;
+  background-size: cover;
 }
 .section-third__inner {
   display: flex;
@@ -1382,7 +1383,16 @@ label {
 ============================================ responsive ========================================
 ================================================================================================*/
 @media screen and (min-width: 1920px) {
-  .main-visual .swiper-slide:nth-child(1), .main-visual .swiper-slide:nth-child(2) {
+  .main-visual .swiper-slide:nth-child(1) {
+    background-position: center;
+  }
+  .main-visual .swiper-slide:nth-child(2) {
+    background-position: center;
+  }
+  .main-visual .swiper-slide:nth-child(3) {
+    background-position: center;
+  }
+  .main-visual .swiper-slide:nth-child(4) {
     background-position: center;
   }
 }
@@ -1415,7 +1425,7 @@ label {
     height: 100%;
     background-image: url(../image/main/main-visual01__mobile.png);
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: center top;
     background-size: cover;
   }
   .main-visual .swiper-slide:nth-child(2) {
@@ -1423,7 +1433,7 @@ label {
     height: 100%;
     background-image: url(../image/main/main-visual02__mobile.png);
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: center top;
     background-size: cover;
   }
   .main-visual .swiper-slide:nth-child(3) {
@@ -1431,7 +1441,7 @@ label {
     height: 100%;
     background-image: url(../image/main/main-visual03__mobile.png);
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: center top;
     background-size: cover;
   }
   .main-visual .swiper-slide:nth-child(4) {
@@ -1439,7 +1449,7 @@ label {
     height: 100%;
     background-image: url(../image/main/main-visual04__mobile.png);
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: center top;
     background-size: cover;
   }
   .main-visual .swiper-navigation {
@@ -1492,6 +1502,7 @@ label {
   }
   .main-text__dep {
     font-size: 5rem;
+    font-weight: 500;
   }
   .quickmenu__inner {
     bottom: 5rem;
@@ -1583,9 +1594,10 @@ label {
     width: 1px;
     height: 100%;
     z-index: 1;
+    opacity: 0.4;
   }
   .quickmenu-link {
-    padding: 2.5rem 2.6rem 4rem 3rem;
+    padding: 22px 16px 22px 16px;
   }
   .quickmenu-txt {
     width: 100%;
@@ -1663,7 +1675,7 @@ label {
     padding: 3rem 3.5rem;
   }
   .program-intro__tit {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     line-height: 1.33;
   }
   .program-intro__tit br {
